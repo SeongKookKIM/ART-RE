@@ -1,0 +1,380 @@
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: url("../font/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../font/Poppins-Bold.ttf");
+}
+$font-babas: BebasNeue-Regular;
+$font-poppin: Poppins-Bold;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "BebasNeue-Regular";
+  font-family: "Poppins-Bold";
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  font-size: 100%;
+  background-color: rgb(22, 19, 19);
+}
+
+// HEAD
+.head {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/tnc-art-logo.png) center center no-repeat;
+  background-size: 300px 300px;
+
+  .header-fixed {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    h2 {
+      color: #fff;
+      font-size: 2em;
+      margin-left: 50px;
+      font-family: $font-poppin;
+    }
+
+    .hambuger-menu {
+      width: 100px;
+      height: 100px;
+      margin-right: 30px;
+      position: relative;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      gap: 20px;
+      cursor: pointer;
+
+      span {
+        display: block;
+        width: 70px;
+        height: 3px;
+        background-color: white;
+        border-radius: 1px;
+      }
+      span:nth-child(2) {
+        width: 45px;
+      }
+    }
+  }
+}
+
+// NFT
+.nft {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  overflow: hidden;
+
+  .nft-title {
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    position: relative;
+    padding-top: 140px;
+    border: 1px solid white;
+    div {
+      width: 100%;
+      p {
+        color: #fff;
+        font-size: 1.5em;
+        font-family: $font-babas;
+      }
+      h3 {
+        color: #fff;
+        font-size: 5em;
+        line-height: 0.8;
+        font-family: $font-babas;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+      }
+    }
+
+    .small-logo {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      bottom: 200px;
+      right: 0;
+    }
+  }
+
+  .nft-pic {
+    width: 95%;
+    height: 100vh;
+    background-color: white;
+    backface-visibility: visible;
+  }
+
+  .nft-contents {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 100px;
+    P {
+      width: 100%;
+      color: #fff;
+      font-size: 2em;
+      font-family: $font-poppin;
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+}
+
+// ABOUT
+.about {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  overflow: hidden;
+  .about-title {
+    width: 100%;
+    margin: 100px 0;
+    h2 {
+      width: 100%;
+      font-size: 10em;
+      text-align: center;
+      line-height: 0.8;
+      font-weight: 700;
+      font-family: $font-poppin;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+      span {
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: -0.2rem;
+        font-family: $font-poppin;
+      }
+      span:nth-child(1) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .about-content-box {
+    width: 95%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .about-pic {
+      width: 50%;
+      height: 100%;
+      overflow: hidden !important;
+      div {
+        width: 80%;
+        height: 100%;
+        background-color: black;
+        margin: 0 auto;
+      }
+    }
+    .about-content {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        width: 100%;
+        font-size: 2em;
+        font-weight: 700;
+        line-height: 1.5em;
+        font-family: $font-poppin;
+      }
+    }
+  }
+  .about-right {
+    p {
+      text-align: right;
+    }
+  }
+}
+
+// PICTURE
+.picture {
+  width: 100%;
+  height: 100vh;
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5em;
+  margin-top: 100px;
+}
+
+// MARQUEE
+.marquee {
+  width: 100%;
+  height: 90vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  overflow: hidden;
+  position: relative;
+  h3 {
+    font-size: 4em;
+    font-family: $font-poppin;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+    text-transform: uppercase;
+    z-index: 41;
+    white-space: nowrap;
+    letter-spacing: 0.1em;
+  }
+  .marquee-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    h3 {
+      width: 100%;
+      height: 100%;
+      color: black;
+      font-size: 10em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $font-babas;
+      font-weight: bold;
+      text-transform: uppercase;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+//   PROJECT
+.project {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  h2 {
+    width: 95%;
+    font-size: 5em;
+    color: #fff;
+    font-family: $font-babas;
+    border-bottom: 3px solid white;
+  }
+
+  .project-list-wrapper {
+    width: 95%;
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+    .project-list {
+      min-width: 450px;
+      min-height: 450px;
+      background-color: white;
+      border-radius: 50px;
+    }
+  }
+}
+
+// OURSOURCING
+.our {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  h2 {
+    width: 95%;
+    font-size: 5em;
+    color: #fff;
+    font-family: $font-babas;
+    border-bottom: 3px solid white;
+  }
+  .our-list-wrapper {
+    width: 95%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .our-list {
+      width: 400px;
+      height: 500px;
+
+      p {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1em;
+        color: #fff;
+        font-family: $font-poppin;
+      }
+      figure {
+        width: 100%;
+        height: calc(100% - 30px);
+        div {
+          width: 100%;
+          height: 400px;
+          background-color: white;
+        }
+        figcaption {
+          width: 100%;
+          font-size: 1.6em;
+          color: #fff;
+          font-family: $font-poppin;
+          text-align: center;
+          line-height: 2.5;
+        }
+      }
+    }
+    .our-list:nth-child(3) {
+      width: 300px;
+    }
+  }
+}
