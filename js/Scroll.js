@@ -27,6 +27,8 @@ gsap
   .to("body", { backgroundColor: "white", duration: 5 })
   .to(".header-fixed h2", { color: "black" })
   .to(".small-logo svg .b", { fill: "black" })
+  .to(".cursor", { border: "3px solid black" })
+  .to(".grow, .grow-small", { backgroundColor: "black" })
   .to(".header-fixed .hambuger-menu span", { backgroundColor: "black" });
 
 gsap
@@ -53,7 +55,9 @@ gsap
   .to("body", { backgroundColor: " rgb(22, 19, 19)", duration: 5 })
   .to(".header-fixed h2", { color: "black" })
   .to(".header-fixed .hambuger-menu span", { backgroundColor: "black" })
-  .to(".small-logo svg .b", { fill: "black" });
+  .to(".small-logo svg .b", { fill: "black" })
+  .to(".cursor", { border: "3px solid white" })
+  .to(".grow, .grow-small", { backgroundColor: "white" });
 
 gsap
   .timeline({

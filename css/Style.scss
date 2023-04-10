@@ -29,6 +29,24 @@ body {
   width: 100%;
   font-size: 100%;
   background-color: rgb(22, 19, 19);
+  position: relative;
+  cursor: none;
+}
+
+/* === Scroll Bar === */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 13px;
+  background: white;
+  outline: none;
+  border: none;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(22, 19, 19);
 }
 
 // HEAD
@@ -58,6 +76,7 @@ body {
     font-size: 2em;
     margin-left: 50px;
     font-family: $font-poppin;
+    cursor: pointer;
   }
 
   .hambuger-menu {
@@ -94,7 +113,6 @@ body {
   position: relative;
   padding-top: 140px;
   margin: 0 auto;
-
   div {
     width: 100%;
     p {
@@ -471,4 +489,30 @@ footer {
     font-family: $font-poppin;
     font-weight: lighter;
   }
+}
+
+// CURSOR
+.cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  pointer-events: none;
+  z-index: 99999;
+}
+
+.grow,
+.grow-small {
+  transform: scale(10);
+  background: #fff;
+  mix-blend-mode: difference;
+  border: none;
+}
+.grow-small {
+  transform: scale(2.5);
 }
