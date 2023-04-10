@@ -13,73 +13,95 @@
     <!-- @@@Main.css -->
     <link rel="stylesheet" href="css/Style.css" />
 
+    <!-- @@@AOS.css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- @@@JQEURY-js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
   </head>
   <body>
     <!-- ===HEAD=== -->
-    <header class="head">
-      <div class="header-fixed">
-        <h2>TNC ART</h2>
-        <div class="hambuger-menu">
-          <span></span>
-          <span></span>
-        </div>
+    <header class="head"></header>
+    <!-- ===Fixed Header=== -->
+    <div class="header-fixed">
+      <h2>TNC ART</h2>
+      <div class="hambuger-menu">
+        <span></span>
+        <span></span>
       </div>
-    </header>
+    </div>
+
+    <!-- Fixed-LOGO -->
+    <div class="small-logo">
+      <svg
+        id="a"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 355.12 355.12"
+      >
+        <path
+          class="b"
+          d="M177.56,355.12C79.66,355.12,0,275.45,0,177.56S79.66,0,177.56,0s177.56,79.66,177.56,177.56-79.66,177.56-177.56,177.56Zm0-338.58C88.78,16.54,16.54,88.78,16.54,177.56s72.24,161.02,161.02,161.02,161.02-72.24,161.02-161.02S266.34,16.54,177.56,16.54Z"
+        />
+        <rect class="b" x="10.8" y="148.19" width="334.87" height="16.88" />
+        <path
+          class="b"
+          d="M96.54,331.83c-.68,0-1.35,0-2.36-.34-3.71-1.01-6.08-4.39-6.08-8.1V32.07c0-4.73,3.71-8.44,8.44-8.44s8.44,3.71,8.44,8.44V292.68L255.2,37.14c2.03-3.38,5.74-4.73,9.45-3.71s6.08,4.39,6.08,8.1V318.68c0,4.73-3.71,8.44-8.44,8.44s-8.44-3.71-8.44-8.44V72.24L103.63,327.78c-1.35,2.7-4.05,4.05-7.09,4.05Z"
+        />
+      </svg>
+    </div>
+
+    <!-- ===nft-title=== -->
+    <section class="nft-title">
+      <div class="first-title">
+        <p>DIGITAL ART THAT</p>
+        <h3>MANIFEST CREATIVITY,</h3>
+      </div>
+      <div class="second-title">
+        <p>EXHILARATING NFTS</p>
+        <h3>CRAFTED TO EXCELLENCE,</h3>
+      </div>
+      <div class="third-title">
+        <p>MARRYING AESTHETICISM AND BLOCKCHAIN</p>
+        <h3>TO EMPOWER ARTISTS,</h3>
+      </div>
+      <div class="four-title">
+        <p>CREATING OUR NICHE</p>
+        <h3>IN THE CACOPHOONY OF NFTS,</h3>
+      </div>
+      <div class="five-title">
+        <p>DITCHING THE HUMDRUM TO</p>
+        <h3>YIELD THE HYPER-IMAGINATIVE</h3>
+      </div>
+    </section>
 
     <!-- ===NFTS=== -->
     <section class="nft">
-      <div class="nft-title">
-        <div class="first-title">
-          <p>DIGITAL ART THAT</p>
-          <h3>MANIFEST CREATIVITY,</h3>
-        </div>
-        <div class="second-title">
-          <p>EXHILARATING NFTS</p>
-          <h3>CRAFTED TO EXCELLENCE,</h3>
-        </div>
-        <div class="third-title">
-          <p>MARRYING AESTHETICISM AND BLOCKCHAIN</p>
-          <h3>TO EMPOWER ARTISTS,</h3>
-        </div>
-        <div class="four-title">
-          <p>CREATING OUR NICHE</p>
-          <h3>IN THE CACOPHOONY OF NFTS,</h3>
-        </div>
-        <div class="five-title">
-          <p>DITCHING THE HUMDRUM TO</p>
-          <h3>YIELD THE HYPER-IMAGINATIVE</h3>
-        </div>
-
-        <div class="small-logo">
-          <img src="img/Logo.svg" alt="nft-logo" />
-        </div>
-      </div>
       <div class="nft-pic"></div>
 
       <div class="nft-contents">
-        <p>
+        <p data-aos="fade-up" data-aos-delay="300">
           A Non-Fungible Token (NFT) Is A Unique Digital Asset Powered By
           Blockchain Technology.
         </p>
-        <p>
+        <p data-aos="fade-up" data-aos-delay="500">
           It Ensures Digital Ownership And Represents Real-World Objects Like
           Art And Many More.
         </p>
-        <p>
+        <p data-aos="fade-up" data-aos-delay="700">
           Ther Are Plenty Of Opportunities For Visual Arts With This Technology,
         </p>
-        <p>And We're Banking On Its Potential To Disrupt The Space.</p>
+        <p data-aos="fade-up" data-aos-delay="900">
+          And We're Banking On Its Potential To Disrupt The Space.
+        </p>
       </div>
     </section>
 
     <!-- ===ABOUT=== -->
     <section class="about">
       <div class="about-title">
-        <h2>ABO</h2>
-        <h2>
+        <h2 data-aos="fade-down" data-aos-offset="700">ABO</h2>
+        <h2 data-aos="fade-up" data-aos-offset="700">
           <span>TNC</span>
           <span>ART</span>
           UT
@@ -88,9 +110,13 @@
 
       <div class="about-left about-content-box">
         <div class="about-pic">
-          <div></div>
+          <div data-aos="fade-right" data-aos-duration="2000"></div>
         </div>
-        <div class="about-content">
+        <div
+          class="about-content"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <p>Tnc Art Is The Creative Arm Of The Dubai-Based</p>
           <p>Blockchain Firm TNC Group.</p>
           <p>Launched In 2018, TNC Is One Of The Fastest-Growing</p>
@@ -101,7 +127,11 @@
       </div>
 
       <div class="about-right about-content-box">
-        <div class="about-content">
+        <div
+          class="about-content"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           <p>Driven By The Passion And Creative</p>
           <p>Genius Of Over A Dozen Digital Artists,</p>
           <p>TNC Art Aims To Carve Out A Uique</p>
@@ -112,15 +142,19 @@
           <p>We Are One Step Closer To This Goal.</p>
         </div>
         <div class="about-pic">
-          <div></div>
+          <div data-aos="fade-left" data-aos-duration="2000"></div>
         </div>
       </div>
 
       <div class="about-left about-content-box">
         <div class="about-pic">
-          <div></div>
+          <div data-aos="fade-right" data-aos-duration="2000"></div>
         </div>
-        <div class="about-content">
+        <div
+          class="about-content"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <p>It is The NFT Space That Motivates Us To</p>
           <p>Pick Up Our Stylus - That Inspires Us To</p>
           <p>Render Color To Our Imagination.</p>
@@ -244,5 +278,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="js/Scroll.js"></script>
+
+    <!-- @@@AOS.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

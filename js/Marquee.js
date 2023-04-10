@@ -6,27 +6,27 @@ const pTag5 = document.querySelector(".alien-planet");
 const pTag6 = document.querySelector(".devcat");
 
 const textArr1 =
-  "LADY-APE-CLUB  LADY-APE-CLUB  LADY-APE-CLUB  LADY-APE-CLUB  LADY-APE-CLUB  LADY-APE-CLUB  LADY-APE-CLUB".split(
+  "LADY-APE-CLUB LADY-APE-CLUB LADY-APE-CLUB LADY-APE-CLUB LADY-APE-CLUB LADY-APE-CLUB LADY-APE-CLUB LADY-APE-CLUB LADY-APE-CLUB".split(
     " "
   );
 const textArr2 =
-  "AURORA-CATS  AURORA-CATS  AURORA-CATS  AURORA-CATS  AURORA-CATS  AURORA-CATS  AURORA-CATS".split(
+  "AURORA-CATS AURORA-CATS AURORA-CATS AURORA-CATS AURORA-CATS AURORA-CATS AURORA-CATS AURORA-CATS AURORA-CATS".split(
     " "
   );
 const textArr3 =
-  "CAREER-SHIBA-INU  CAREER-SHIBA-INU  CAREER-SHIBA-INU  CAREER-SHIBA-INU  CAREER-SHIBA-INU  CAREER-SHIBA-INU  CAREER-SHIBA-INU".split(
+  "CAREER-SHIBA-INU CAREER-SHIBA-INU CAREER-SHIBA-INU CAREER-SHIBA-INU CAREER-SHIBA-INU CAREER-SHIBA-INU CAREER-SHIBA-INU CAREER-SHIBA-INU CAREER-SHIBA-INU".split(
     " "
   );
 const textArr4 =
-  "BABY-APE  BABY-APE  BABY-APE  BABY-APE  BABY-APE  BABY-APE  BABY-APE".split(
+  "BABY-APE BABY-APE BABY-APE BABY-APE BABY-APE BABY-APE BABY-APE BABY-APE BABY-APE".split(
     " "
   );
 const textArr5 =
-  "ALIEN-PLANET  ALIEN-PLANET  ALIEN-PLANET   ALIEN-PLANET   ALIEN-PLANET   ALIEN-PLANET   ALIEN-PLANET".split(
+  "ALIEN-PLANET ALIEN-PLANET ALIEN-PLANET ALIEN-PLANET ALIEN-PLANET ALIEN-PLANET ALIEN-PLANET ALIEN-PLANET ALIEN-PLANET".split(
     " "
   );
 const textArr6 =
-  "DEVCATS  DEVCATS   DEVCATS   DEVCATS   DEVCATS   DEVCATS   DEVCATS".split(
+  "DEVCATS DEVCATS DEVCATS DEVCATS DEVCATS DEVCATS DEVCATS DEVCATS DEVCATS".split(
     " "
   );
 
@@ -69,23 +69,23 @@ function animate() {
   count5++;
   count6++;
 
-  count1 = marqueeText(count1, pTag1, -1);
-  count2 = marqueeText(count2, pTag2, 1);
-  count3 = marqueeText(count3, pTag3, -1);
-  count4 = marqueeText(count4, pTag4, 1);
-  count5 = marqueeText(count5, pTag5, -1);
-  count6 = marqueeText(count6, pTag6, 1);
+  count1 = marqueeText(count1, pTag1, 1);
+  count2 = marqueeText(count2, pTag2, -1);
+  count3 = marqueeText(count3, pTag3, 1);
+  count4 = marqueeText(count4, pTag4, -1);
+  count5 = marqueeText(count5, pTag5, 1);
+  count6 = marqueeText(count6, pTag6, -1);
 
   window.requestAnimationFrame(animate);
 }
 
 function scrollHandler() {
-  count1 += 10;
-  count2 += 10;
-  count3 += 10;
-  count4 += 10;
-  count5 += 10;
-  count6 += 10;
+  count1 += 5;
+  count2 += 5;
+  count3 += 5;
+  count4 += 5;
+  count5 += 5;
+  count6 += 5;
 }
 
 window.addEventListener("scroll", scrollHandler);
