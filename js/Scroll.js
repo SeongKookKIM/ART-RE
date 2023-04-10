@@ -70,3 +70,14 @@ gsap
   .to(".header-fixed .hambuger-menu span", { backgroundColor: "white" })
   .to(".small-logo svg .b", { fill: "white" })
   .to(".project-list-wrapper", { left: "-100%", duration: 5 });
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".future",
+      start: "top-=200 top+=100",
+      end: "top+=300 bottom",
+      scrub: 1,
+    },
+  })
+  .to("body", { backgroundColor: "black", duration: 5 });
