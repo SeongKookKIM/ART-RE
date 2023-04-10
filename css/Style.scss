@@ -269,7 +269,7 @@ body {
     font-size: 4em;
     font-family: $font-poppin;
     -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.2);
     color: transparent;
     text-transform: uppercase;
     z-index: 41;
@@ -294,7 +294,6 @@ body {
       font-family: $font-babas;
       font-weight: bold;
       text-transform: uppercase;
-      background-color: rgba(255, 255, 255, 0.8);
     }
   }
 }

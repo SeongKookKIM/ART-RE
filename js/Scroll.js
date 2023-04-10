@@ -50,7 +50,6 @@ gsap
       scrub: 1,
     },
   })
-  .to(".marquee-title h3", { backgroundColor: " rgb(22, 19, 19)" })
   .to("body", { backgroundColor: " rgb(22, 19, 19)", duration: 5 })
   .to(".header-fixed h2", { color: "black" })
   .to(".header-fixed .hambuger-menu span", { backgroundColor: "black" })
