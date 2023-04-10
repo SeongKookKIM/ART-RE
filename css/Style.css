@@ -136,8 +136,7 @@ body {
   width: 95%;
   height: 100vh;
   background-color: bisque;
-  -webkit-backface-visibility: visible;
-          backface-visibility: visible;
+  backface-visibility: visible;
 }
 .nft .nft-contents {
   width: 95%;
