@@ -80,12 +80,12 @@ function animate() {
 }
 
 function scrollHandler() {
-  count1 += 5;
-  count2 += 5;
-  count3 += 5;
-  count4 += 5;
-  count5 += 5;
-  count6 += 5;
+  count1 += 0;
+  count2 += 0;
+  count3 += 0;
+  count4 += 0;
+  count5 += 0;
+  count6 += 0;
 }
 
 window.addEventListener("scroll", scrollHandler);

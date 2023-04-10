@@ -12,8 +12,20 @@ gsap
   .from(".second-title", { y: innerHeight * 1, duration: 2.5 })
   .from(".third-title", { y: innerHeight * 1, duration: 2.5 })
   .from(".four-title", { y: innerHeight * 1, duration: 2.5 })
-  .from(".five-title", { y: innerHeight * 1, duration: 2.5 })
-  .from(".small-logo", { y: innerHeight * 1, opacity: 0, duration: 2.5 });
+  .from(".five-title, .small-logo", { y: innerHeight * 1, duration: 2.5 });
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".nft-contents",
+      start: "top-=1000 top",
+      end: "bottom-=100 center",
+      scrub: 1,
+    },
+  })
+  .to(".fade-first", { opacity: "1" })
+  .to(".fade-second", { opacity: "1" })
+  .to(".fade-third", { opacity: "1" });
 
 gsap
   .timeline({
@@ -30,6 +42,43 @@ gsap
   .to(".cursor", { border: "3px solid black" })
   .to(".grow, .grow-small", { backgroundColor: "black" })
   .to(".header-fixed .hambuger-menu span", { backgroundColor: "black" });
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".about-content-first",
+      start: "top-=500 top",
+      end: "bottom-=100 center",
+      scrub: 1,
+    },
+  })
+  .to(".about-content-first-fade-first", { opacity: "1", duration: 2 })
+  .to(".about-content-first-fade-third", { opacity: "1", duration: 2 })
+  .to(".about-content-first-fade-second", { opacity: "1", duration: 2 });
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".about-content-second",
+      start: "top-=500 top",
+      end: "bottom-=200 center",
+      scrub: 1,
+    },
+  })
+  .to(".about-content-second-fade-first", { opacity: "1", duration: 2 })
+  .to(".about-content-second-fade-third", { opacity: "1", duration: 2 })
+  .to(".about-content-second-fade-second", { opacity: "1", duration: 2 });
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".about-content-third",
+      start: "top-=500 top",
+      end: "bottom-=200 center",
+      scrub: 1,
+    },
+  })
+  .to(".about-content-third-fade-first", { opacity: "1", duration: 2 })
+  .to(".about-content-third-fade-third", { opacity: "1", duration: 2 })
+  .to(".about-content-third-fade-second", { opacity: "1", duration: 2 });
 
 gsap
   .timeline({
@@ -72,7 +121,7 @@ gsap
   .to(".header-fixed h2", { color: "white" })
   .to(".header-fixed .hambuger-menu span", { backgroundColor: "white" })
   .to(".small-logo svg .b", { fill: "white" })
-  .to(".project-list-wrapper", { left: "-100%", duration: 5 });
+  .to(".project-list-wrapper", { left: "-140%", duration: 5 });
 
 gsap
   .timeline({

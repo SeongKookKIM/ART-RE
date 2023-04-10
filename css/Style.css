@@ -113,12 +113,12 @@ body::-webkit-scrollbar-track {
 }
 .nft-title div p {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: BebasNeue-Regular;
 }
 .nft-title div h3 {
   color: #fff;
-  font-size: 5em;
+  font-size: 8em;
   line-height: 0.8;
   font-family: BebasNeue-Regular;
   letter-spacing: 0.1em;
@@ -126,8 +126,8 @@ body::-webkit-scrollbar-track {
 }
 
 .small-logo {
-  width: 100px;
-  height: 100px;
+  width: 160px;
+  height: 160px;
   position: fixed;
   bottom: 2.5%;
   right: 2.5%;
@@ -167,10 +167,15 @@ body::-webkit-scrollbar-track {
 .nft .nft-contents P {
   width: 100%;
   color: #fff;
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: Poppins-Bold;
   text-align: center;
   line-height: 1.5;
+  opacity: 1;
+}
+.nft .nft-contents P span {
+  display: inline-block;
+  opacity: 0;
 }
 
 .about {
@@ -241,6 +246,10 @@ body::-webkit-scrollbar-track {
   line-height: 1.5em;
   font-family: Poppins-Bold;
 }
+.about .about-content-box .about-content p span {
+  display: inline-block;
+  opacity: 0;
+}
 .about .about-right p {
   text-align: right;
 }
@@ -258,17 +267,17 @@ body::-webkit-scrollbar-track {
 
 .marquee {
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 60px;
   overflow: hidden;
   position: relative;
 }
 .marquee h3 {
-  font-size: 4em;
+  font-size: 5em;
   font-family: Poppins-Bold;
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: rgba(0, 0, 0, 0.2);
@@ -304,7 +313,7 @@ body::-webkit-scrollbar-track {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   overflow: hidden;
   position: relative;
@@ -315,10 +324,12 @@ body::-webkit-scrollbar-track {
   color: #fff;
   font-family: BebasNeue-Regular;
   border-bottom: 3px solid white;
+  margin: 140px 0;
+  padding-bottom: 20px;
 }
 .project .project-list-wrapper {
   width: 95%;
-  height: 450px;
+  height: 750px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -327,8 +338,8 @@ body::-webkit-scrollbar-track {
   left: 0%;
 }
 .project .project-list-wrapper .project-list {
-  min-width: 450px;
-  min-height: 450px;
+  min-width: 33.3%;
+  min-height: 750px;
   background-color: antiquewhite;
   border-radius: 50px;
 }
@@ -347,6 +358,7 @@ body::-webkit-scrollbar-track {
   color: #fff;
   font-family: BebasNeue-Regular;
   border-bottom: 3px solid white;
+  padding-bottom: 20px;
 }
 .our .our-list-wrapper {
   width: 95%;
