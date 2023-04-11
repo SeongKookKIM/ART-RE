@@ -114,7 +114,7 @@
     </section>
 
     <!-- ===ABOUT=== -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-title">
         <h2 data-aos="fade-down" data-aos-offset="1000" class="cursor-scale">
           ABO
@@ -317,7 +317,7 @@
     </section>
 
     <!-- ===PROJECT=== -->
-    <section class="project">
+    <section class="project" id="project">
       <h2 class="cursor-scale small">TNC ART</h2>
       <div class="project-list-wrapper">
         <div class="project-list cursor-scale"></div>
@@ -366,7 +366,7 @@
     </section>
 
     <!-- ===FUTURE=== -->
-    <section class="future">
+    <section class="future" id="future">
       <div class="future-gradient"></div>
       <div class="future-contents">
         <h2 class="future-contents-top">THE</h2>
@@ -411,47 +411,72 @@
     <!-- ===CONTACT-US=== -->
     <section class="contact">
       <div class="contact-title">
-        <h2>CONTACT</h2>
-        <h2>
+        <h2 data-aos="fade-down" data-aos-offset="800" class="cursor-scale">
+          CONTACT
+        </h2>
+        <h2 data-aos="fade-up" data-aos-offset="800" class="cursor-scale">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;US
         </h2>
       </div>
-      <div class="contact-contents">
-        <div class="contact-video">
-          <video muted autoplay loop>
+
+      <div class="contact-contents contact-contents-top">
+        <div class="contact-video contact-video-top">
+          <video muted autoplay loop class="cursor-scale">
             <source src="img/contact01.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="contact-email">
-          <h3>E-MAIL</h3>
-          <h4>tnc.artz@gmail.com</h4>
+          <h3 class="cursor-scale small">E-MAIL</h3>
+          <h4 class="cursor-scale small">tnc.artz@gmail.com</h4>
         </div>
       </div>
-      <div class="contact-contents">
+
+      <div class="contact-contents contact-contents-bottom">
         <div class="contact-sns">
           <ul>
-            <li>
-              <a href="#"><img src="img/Icon twitter.png" alt="twitter" /></a>
+            <li class="cursor-scale">
+              <a href="https://twitter.com/TNCARTTeam" target="_blank"
+                ><img src="img/Icon twitter.png" alt="twitter"
+              /></a>
             </li>
-            <li>
-              <a href="#"><img src="img/Icon telegram.png" alt="telegram" /></a>
+            <li class="cursor-scale">
+              <a href="https://t.me/ladyapeclub" target="_blank"
+                ><img src="img/Icon telegram.png" alt="telegram"
+              /></a>
             </li>
-            <li>
-              <a href="#"><img src="img/Icon discord.png" alt="discord" /></a>
+            <li class="cursor-scale">
+              <a href="https://discord.com/invite/Ban6ZBy5V2" target="_blank"
+                ><img src="img/Icon discord.png" alt="discord"
+              /></a>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="contact-video">
-        <video muted autoplay loop>
-          <source src="img/contact02.mp4" type="video/mp4" />
-        </video>
+        <div class="contact-video contact-video-bottom">
+          <video muted autoplay loop class="cursor-scale">
+            <source src="img/contact02.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
     </section>
 
     <!-- ===FOOTER=== -->
     <footer>
-      <p>@ 2023 ALL Rights Reserved.</p>
+      <ul>
+        <li><a href="#" class="cursor-scale small">HOME</a></li>
+        <li><a href="#about" class="cursor-scale small">ABOUT</a></li>
+        <li>
+          <a href="#project" class="cursor-scale small">Featured projects</a>
+        </li>
+        <li>
+          <a href="#future" class="cursor-scale small"
+            >The Future with TNC Art</a
+          >
+        </li>
+      </ul>
+      <div class="footer-wrapper">
+        <img src="img/bottom logo.png" alt="bottom-logo" />
+        <p>@ 2023 All Rights Reserved.</p>
+      </div>
     </footer>
 
     <!-- ===CURSOR=== -->
@@ -514,8 +539,8 @@
     <script>
       VANTA.DOTS({
         el: ".future",
-        mouseControls: true,
-        touchControls: true,
+        mouseControls: false,
+        touchControls: false,
         gyroControls: false,
         minHeight: 200.0,
         minWidth: 200.0,

@@ -134,3 +134,19 @@ gsap
     },
   })
   .to("body", { backgroundColor: "black", duration: 5 });
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".contact",
+      start: "top-=400 top",
+      end: "top+=300 bottom",
+      scrub: 1,
+    },
+  })
+  .to("body", { backgroundColor: "white", duration: 5 })
+  .to(".header-fixed h2", { color: "black" })
+  .to(".small-logo svg .b", { fill: "transparent" })
+  .to(".cursor", { border: "3px solid black" })
+  .to(".grow, .grow-small", { backgroundColor: "black" })
+  .to(".header-fixed .hambuger-menu span", { backgroundColor: "black" });

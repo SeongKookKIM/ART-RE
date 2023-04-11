@@ -6,12 +6,17 @@
   font-family: "Poppins-Bold";
   src: url("../font/Poppins-Bold.ttf");
 }
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../font/Poppins-Light.ttf");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "BebasNeue-Regular";
   font-family: "Poppins-Bold";
+  font-family: "Poppins-Light";
 }
 
 ul,
@@ -201,7 +206,6 @@ body::-webkit-scrollbar-track {
   overflow: hidden;
 }
 .about .about-title h2 {
-  width: 100%;
   font-size: 10em;
   text-align: center;
   line-height: 0.8;
@@ -429,6 +433,9 @@ body::-webkit-scrollbar-track {
   text-shadow: 0 0 15px white;
   position: absolute;
   white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .future .future-contents .future-contents-middle {
   top: 50%;
@@ -505,11 +512,11 @@ body::-webkit-scrollbar-track {
 
 .contact {
   width: 100%;
-  background-color: antiquewhite;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
+  gap: 150px;
 }
 .contact .contact-title {
   margin: 150px 0;
@@ -520,27 +527,125 @@ body::-webkit-scrollbar-track {
   letter-spacing: 0.5rem;
   line-height: 0.8;
 }
-.contact .contact-contents {
+.contact .contact-contents-top {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 700px;
   overflow: hidden;
+}
+.contact .contact-contents-top .contact-video-top {
+  width: 50%;
+  height: 100%;
+}
+.contact .contact-contents-top .contact-video-top video {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contact .contact-contents-top .contact-email {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.contact .contact-contents-top .contact-email h3 {
+  font-size: 5em;
+  font-family: BebasNeue-Regular;
+  color: black;
+  font-weight: bold;
+}
+.contact .contact-contents-top .contact-email h4 {
+  font-size: 5rem;
+  font-family: Poppins-Light;
+  color: black;
+  font-weight: lighter;
+}
+.contact .contact-contents-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+.contact .contact-contents-bottom .contact-sns {
+  width: 50%;
+}
+.contact .contact-contents-bottom .contact-sns ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.contact .contact-contents-bottom .contact-sns ul li {
+  width: 85px;
+  height: 85px;
+}
+.contact .contact-contents-bottom .contact-sns ul li a {
+  width: 100%;
+  text-decoration: none;
+}
+.contact .contact-contents-bottom .contact-sns ul li a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contact .contact-contents-bottom .contact-video-bottom {
+  width: 50%;
+  height: 100%;
+}
+.contact .contact-contents-bottom .contact-video-bottom video {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
   width: 95%;
   height: 150px;
-  border-top: 3px solid white;
-  margin: 0 auto;
+  margin: 150px auto 0;
+}
+footer ul {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 200px;
+  border-bottom: 3px solid black;
+  padding-bottom: 20px;
 }
-footer p {
-  font-size: 1.6em;
-  color: #fff;
+footer ul li a {
+  font-size: 2em;
   font-family: Poppins-Bold;
-  font-weight: lighter;
+  color: black;
+}
+footer ul li:nth-child(4) a {
+  letter-spacing: -0.05rem;
+}
+footer .footer-wrapper {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+footer .footer-wrapper p {
+  position: absolute;
+  right: 0;
+  font-size: 1.8em;
+  font-family: Poppins-Bold;
 }
 
 .cursor {

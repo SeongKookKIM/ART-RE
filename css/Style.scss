@@ -6,8 +6,13 @@
   font-family: "Poppins-Bold";
   src: url("../font/Poppins-Bold.ttf");
 }
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../font/Poppins-Light.ttf");
+}
 $font-babas: BebasNeue-Regular;
 $font-poppin: Poppins-Bold;
+$font-poppin-light: Poppins-Light;
 
 * {
   margin: 0;
@@ -15,6 +20,7 @@ $font-poppin: Poppins-Bold;
   box-sizing: border-box;
   font-family: "BebasNeue-Regular";
   font-family: "Poppins-Bold";
+  font-family: "Poppins-Light";
 }
 ul,
 ol {
@@ -209,7 +215,6 @@ body::-webkit-scrollbar-track {
     margin: 100px 0;
     overflow: hidden;
     h2 {
-      width: 100%;
       font-size: 10em;
       text-align: center;
       line-height: 0.8;
@@ -449,6 +454,7 @@ body::-webkit-scrollbar-track {
       text-shadow: 0 0 15px white;
       position: absolute;
       white-space: nowrap;
+      user-select: none;
     }
     .future-contents-middle {
       top: 50%;
@@ -533,11 +539,11 @@ body::-webkit-scrollbar-track {
 // CONTACT-US
 .contact {
   width: 100%;
-  background-color: antiquewhite;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
+  gap: 150px;
   .contact-title {
     margin: 150px 0;
     h2 {
@@ -547,11 +553,85 @@ body::-webkit-scrollbar-track {
       line-height: 0.8;
     }
   }
-  .contact-contents {
+  .contact-contents-top {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 700px;
     overflow: hidden;
+    .contact-video-top {
+      width: 50%;
+      height: 100%;
+      video {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: none;
+        object-fit: cover;
+      }
+    }
+    .contact-email {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      h3 {
+        font-size: 5em;
+        font-family: $font-babas;
+        color: black;
+        font-weight: bold;
+      }
+      h4 {
+        font-size: 5rem;
+        font-family: $font-poppin-light;
+        color: black;
+        font-weight: lighter;
+      }
+    }
+  }
+  .contact-contents-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    .contact-sns {
+      width: 50%;
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        li {
+          width: 85px;
+          height: 85px;
+          a {
+            width: 100%;
+            text-decoration: none;
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    .contact-video-bottom {
+      width: 50%;
+      height: 100%;
+      video {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: none;
+        object-fit: cover;
+      }
+    }
   }
 }
 
@@ -559,19 +639,43 @@ body::-webkit-scrollbar-track {
 footer {
   width: 95%;
   height: 150px;
-  border-top: 3px solid white;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  p {
-    font-size: 1.6em;
-    color: #fff;
-    font-family: $font-poppin;
-    font-weight: lighter;
+  margin: 150px auto 0;
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+    li {
+      a {
+        font-size: 2em;
+        font-family: $font-poppin;
+        color: black;
+      }
+    }
+    li:nth-child(4) {
+      a {
+        letter-spacing: -0.05rem;
+      }
+    }
+  }
+  .footer-wrapper {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    p {
+      position: absolute;
+      right: 0;
+      font-size: 1.8em;
+      font-family: $font-poppin;
+    }
   }
 }
-
 // CURSOR
 .cursor {
   position: fixed;
