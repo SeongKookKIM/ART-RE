@@ -1,15 +1,15 @@
 // @@@PICTURE
-const pictureSection = document.querySelector(".picture");
+// const pictureSection = document.querySelector(".picture");
 
-pictureSection.addEventListener("mouseover", function () {
-  const hoverBg = this.getAttribute("data-hover-bg");
-  this.style.backgroundImage = `url(${hoverBg})`;
-});
+// pictureSection.addEventListener("mouseover", function () {
+//   const hoverBg = this.getAttribute("data-hover-bg");
+//   this.style.backgroundImage = `url(${hoverBg})`;
+// });
 
-pictureSection.addEventListener("mouseout", function () {
-  const originalBg = this.getAttribute("data-original-bg");
-  this.style.backgroundImage = `url(${originalBg})`;
-});
+// pictureSection.addEventListener("mouseout", function () {
+//   const originalBg = this.getAttribute("data-original-bg");
+//   this.style.backgroundImage = `url(${originalBg})`;
+// });
 
 // @@@PROJECT-LIST
 const projectListItems = document.querySelectorAll(".project-list");

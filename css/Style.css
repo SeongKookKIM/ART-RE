@@ -283,13 +283,19 @@ body::-webkit-scrollbar-track {
 .picture {
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5em;
-  margin-top: 100px;
-  background: url(../img/picture01.png) center center no-repeat;
+  background: url(../img/picture02.png) center center no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.picture::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.3674719888) 0%, rgba(0, 0, 0, 0.8) 100%);
 }
 
 .marquee {
@@ -729,4 +735,12 @@ footer .footer-wrapper p {
 
 .grow-small {
   transform: scale(2.5);
+}
+
+.grow-blend {
+  transform: scale(20);
+  background: white;
+  mix-blend-mode: soft-light;
+  border: none;
+  outline: none;
 }/*# sourceMappingURL=Style.css.map */
