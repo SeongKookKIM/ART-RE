@@ -169,6 +169,12 @@ body::-webkit-scrollbar-track {
   background-color: bisque;
   backface-visibility: visible;
 }
+.nft .nft-pic video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .nft .nft-contents {
   width: 95%;
   display: flex;
@@ -226,7 +232,7 @@ body::-webkit-scrollbar-track {
 }
 .about .about-content-box {
   width: 95%;
-  height: 600px;
+  height: 700px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -239,8 +245,15 @@ body::-webkit-scrollbar-track {
 .about .about-content-box .about-pic div {
   width: 80%;
   height: 100%;
-  background-color: black;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-content-box .about-pic div img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about .about-content-box .about-content {
   width: 50%;
@@ -254,12 +267,14 @@ body::-webkit-scrollbar-track {
   width: 100%;
   font-size: 2em;
   font-weight: 700;
-  line-height: 1.5em;
+  line-height: 1.9em;
   font-family: Poppins-Bold;
+  padding: 0 50px;
 }
 .about .about-content-box .about-content p span {
   display: inline-block;
   opacity: 0;
+  font-family: Poppins-Bold;
 }
 .about .about-right p {
   text-align: right;
@@ -268,12 +283,13 @@ body::-webkit-scrollbar-track {
 .picture {
   width: 100%;
   height: 100vh;
-  background-color: brown;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 5em;
   margin-top: 100px;
+  background: url(../img/picture01.png) center center no-repeat;
+  background-size: cover;
 }
 
 .marquee {
@@ -335,7 +351,7 @@ body::-webkit-scrollbar-track {
   color: #fff;
   font-family: BebasNeue-Regular;
   border-bottom: 3px solid white;
-  margin: 140px 0;
+  margin: 100px 0;
   padding-bottom: 20px;
 }
 .project .project-list-wrapper {
@@ -351,8 +367,13 @@ body::-webkit-scrollbar-track {
 .project .project-list-wrapper .project-list {
   min-width: 33.3%;
   aspect-ratio: 1;
-  background-color: antiquewhite;
   border-radius: 50px;
+}
+.project .project-list-wrapper .project-list img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .our {
@@ -380,14 +401,14 @@ body::-webkit-scrollbar-track {
   align-items: center;
 }
 .our .our-list-wrapper .our-list {
-  width: 450px;
+  width: 400px;
   height: 600px;
 }
 .our .our-list-wrapper .our-list p {
   width: 100%;
   height: 30px;
   line-height: 30px;
-  font-size: 1.6em;
+  font-size: 1.4em;
   color: #fff;
   font-family: Poppins-Bold;
 }
@@ -398,7 +419,18 @@ body::-webkit-scrollbar-track {
 .our .our-list-wrapper .our-list figure div {
   width: 100%;
   height: 500px;
-  background-color: antiquewhite;
+}
+.our .our-list-wrapper .our-list figure div video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.our .our-list-wrapper .our-list figure div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .our .our-list-wrapper .our-list figure figcaption {
   width: 100%;

@@ -77,7 +77,11 @@
 
     <!-- ===NFTS=== -->
     <section class="nft">
-      <div class="nft-pic"></div>
+      <div class="nft-pic">
+        <video muted autoplay loop>
+          <source src="img/main-video.mp4" type="video/mp4" />
+        </video>
+      </div>
 
       <div class="nft-contents">
         <p>
@@ -133,7 +137,9 @@
             data-aos-duration="2000"
             data-aos-offset="800"
             class="cursor-scale"
-          ></div>
+          >
+            <img src="img/about01.png" alt="about01" />
+          </div>
         </div>
         <div class="about-content about-content-first">
           <p class="cursor-scale small">
@@ -230,7 +236,9 @@
             data-aos="fade-left"
             data-aos-duration="2000"
             class="cursor-scale"
-          ></div>
+          >
+            <img src="img/about02.png" alt="about02" />
+          </div>
         </div>
       </div>
 
@@ -240,7 +248,9 @@
             data-aos="fade-right"
             data-aos-duration="2000"
             class="cursor-scale"
-          ></div>
+          >
+            <img src="img/about03.png" alt="about03" />
+          </div>
         </div>
         <div class="about-content about-content-third">
           <p class="cursor-scale small">
@@ -296,7 +306,11 @@
     </section>
 
     <!-- ===PICTURE=== -->
-    <section class="picture">Picture</section>
+    <section
+      class="picture cursor-scale"
+      data-original-bg="img/picture01.png"
+      data-hover-bg="img/picture02.png"
+    ></section>
 
     <!-- ===MARQUEE=== -->
     <section class="marquee">
@@ -320,12 +334,64 @@
     <section class="project" id="project">
       <h2 class="cursor-scale small">TNC ART</h2>
       <div class="project-list-wrapper">
-        <div class="project-list cursor-scale"></div>
-        <div class="project-list cursor-scale"></div>
-        <div class="project-list cursor-scale"></div>
-        <div class="project-list cursor-scale"></div>
-        <div class="project-list cursor-scale"></div>
-        <div class="project-list cursor-scale"></div>
+        <div
+          class="project-list cursor-scale"
+          data-original-bg="img/nft/LAC.png"
+          data-hover-bg="img/nft/LAC.gif"
+        >
+          <img src="img/nft/LAC.png" alt="LAC" class="project-lac" />
+        </div>
+        <div
+          class="project-list cursor-scale"
+          data-original-bg="img/nft/baby-ape.png"
+          data-hover-bg="img/nft/BABY-APE.gif"
+        >
+          <img src="img/nft/baby-ape.png" alt="baby-ape" class="project-ba" />
+        </div>
+        <div
+          class="project-list cursor-scale"
+          data-original-bg="img/nft/aurora-cats.png"
+          data-hover-bg="img/nft/aurora-cats.gif"
+        >
+          <img
+            src="img/nft/aurora-cats.png"
+            alt="aurora-cats"
+            class="project-ac"
+          />
+        </div>
+        <div
+          class="project-list cursor-scale"
+          data-original-bg="img/nft/career-shiba-inu.png"
+          data-hover-bg="img/nft/career-shiba-inu.gif"
+        >
+          <img
+            src="img/nft/career-shiba-inu.png"
+            alt="career-shiba-inu"
+            class="project-csi"
+          />
+        </div>
+        <div
+          class="project-list cursor-scale"
+          data-original-bg="img/nft/alien planet.png"
+          data-hover-bg="img/nft/alien-planet.gif"
+        >
+          <img
+            src="img/nft/alien planet.png"
+            alt="alien-planet"
+            class="project-ap"
+          />
+        </div>
+        <div
+          class="project-list cursor-scale"
+          data-original-bg="img/nft/pixel-friends.png"
+          data-hover-bg="img/nft/pixel-friends.gif"
+        >
+          <img
+            src="img/nft/pixel-friends.png"
+            alt="pixel-friends"
+            class="project-pf"
+          />
+        </div>
       </div>
     </section>
 
@@ -336,21 +402,29 @@
         <div class="our-list">
           <p>2022-2023 Copa Del Rey</p>
           <figure>
-            <div class="cursor-scale"></div>
+            <div class="cursor-scale">
+              <video muted autoplay loop>
+                <source src="img/nft/With. 3D Factory.mp4" type="video/mp4" />
+              </video>
+            </div>
             <figcaption>With. 3D Factory</figcaption>
           </figure>
         </div>
         <div class="our-list">
           <p>My Name</p>
           <figure>
-            <div class="cursor-scale"></div>
+            <div class="cursor-scale">
+              <img src="img/nft/With. Agent Team.png" alt="Agent-team" />
+            </div>
             <figcaption>With.Agent Team</figcaption>
           </figure>
         </div>
         <div class="our-list">
           <p>Talent Bori</p>
           <figure>
-            <div class="cursor-scale"></div>
+            <div class="cursor-scale">
+              <img src="img/nft/With. woriteamz.png" alt="woriteamz-team" />
+            </div>
             <figcaption>With.WORITEAMZ</figcaption>
           </figure>
         </div>
@@ -358,7 +432,9 @@
         <div class="our-list">
           <p>Ice Dream</p>
           <figure>
-            <div class="cursor-scale"></div>
+            <div class="cursor-scale">
+              <img src="img/nft/With. Ice Dream.png" alt="Ice Dream" />
+            </div>
             <figcaption>With.Ice Dream</figcaption>
           </figure>
         </div>
@@ -554,5 +630,8 @@
         showLines: false,
       });
     </script>
+
+    <!-- @@@PICTURE -->
+    <script src="js/Pure.js" type="text/javascript"></script>
   </body>
 </html>
