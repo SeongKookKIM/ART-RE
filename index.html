@@ -54,23 +54,23 @@
     <!-- ===nft-title=== -->
     <section class="nft-title">
       <div class="first-title">
-        <p class="cursor-scale">DIGITAL ART THAT</p>
+        <p>DIGITAL ART THAT</p>
         <h3 class="cursor-scale">MANIFEST CREATIVITY,</h3>
       </div>
       <div class="second-title">
-        <p class="cursor-scale">EXHILARATING NFTS</p>
+        <p>EXHILARATING NFTS</p>
         <h3 class="cursor-scale">CRAFTED TO EXCELLENCE,</h3>
       </div>
       <div class="third-title">
-        <p class="cursor-scale">MARRYING AESTHETICISM AND BLOCKCHAIN</p>
+        <p>MARRYING AESTHETICISM AND BLOCKCHAIN</p>
         <h3 class="cursor-scale">TO EMPOWER ARTISTS,</h3>
       </div>
       <div class="four-title">
-        <p class="cursor-scale">CREATING OUR NICHE</p>
+        <p>CREATING OUR NICHE</p>
         <h3 class="cursor-scale">IN THE CACOPHOONY OF NFTS,</h3>
       </div>
       <div class="five-title">
-        <p class="cursor-scale">DITCHING THE HUMDRUM TO</p>
+        <p>DITCHING THE HUMDRUM TO</p>
         <h3 class="cursor-scale">YIELD THE HYPER-IMAGINATIVE</h3>
       </div>
     </section>
@@ -367,7 +367,12 @@
 
     <!-- ===FUTURE=== -->
     <section class="future">
-      <h2 class="cursor-scale">The Future with TNC ART</h2>
+      <div class="future-gradient"></div>
+      <div class="future-contents">
+        <h2 class="future-contents-top">THE</h2>
+        <h2 class="future-contents-middle">FUTURE WITH</h2>
+        <h2 class="future-contents-bottom">TNC ART</h2>
+      </div>
     </section>
 
     <!-- ===LADY APE COIN=== -->
@@ -400,6 +405,47 @@
         <p>JUST KEPP IN MIND,</p>
         <p>YOU'LL ONLY GET THE REWARD IF YOU HOLD ON TO THE</p>
         <p>PURCHASED NFT AT LEAST 3 DAYS AFTER THE TRANSACTION.</p>
+      </div>
+    </section>
+
+    <!-- ===CONTACT-US=== -->
+    <section class="contact">
+      <div class="contact-title">
+        <h2>CONTACT</h2>
+        <h2>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;US
+        </h2>
+      </div>
+      <div class="contact-contents">
+        <div class="contact-video">
+          <video muted autoplay loop>
+            <source src="img/contact01.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="contact-email">
+          <h3>E-MAIL</h3>
+          <h4>tnc.artz@gmail.com</h4>
+        </div>
+      </div>
+      <div class="contact-contents">
+        <div class="contact-sns">
+          <ul>
+            <li>
+              <a href="#"><img src="img/Icon twitter.png" alt="twitter" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/Icon telegram.png" alt="telegram" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/Icon discord.png" alt="discord" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-video">
+        <video muted autoplay loop>
+          <source src="img/contact02.mp4" type="video/mp4" />
+        </video>
       </div>
     </section>
 
@@ -461,5 +507,27 @@
 
     <!-- @@@CURSOR -->
     <script src="js/Cursor.js" type="text/javascript"></script>
+
+    <!-- @@@VANTA.JS -->
+    <script src="lib/three.min.js"></script>
+    <script src="lib/vanta.dots.min.js"></script>
+    <script>
+      VANTA.DOTS({
+        el: ".future",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0xffffff,
+        color2: 0xffffff,
+        backgroundColor: 0x0,
+        size: 10.0,
+        spacing: 76.0,
+        showLines: false,
+      });
+    </script>
   </body>
 </html>

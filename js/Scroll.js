@@ -12,7 +12,8 @@ gsap
   .from(".second-title", { y: innerHeight * 1, duration: 2.5 })
   .from(".third-title", { y: innerHeight * 1, duration: 2.5 })
   .from(".four-title", { y: innerHeight * 1, duration: 2.5 })
-  .from(".five-title, .small-logo", { y: innerHeight * 1, duration: 2.5 });
+  .from(".small-logo", { x: innerWidth * -1, opacity: 0, duration: 2.5 })
+  .from(".five-title ", { y: innerHeight * 1, duration: 2.5 });
 
 gsap
   .timeline({
@@ -127,7 +128,7 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: ".future",
-      start: "top-=200 top+=100",
+      start: "top top",
       end: "top+=300 bottom",
       scrub: 1,
     },

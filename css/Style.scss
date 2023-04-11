@@ -31,6 +31,8 @@ body {
   background-color: rgb(22, 19, 19);
   position: relative;
   cursor: none;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 /* === Scroll Bar === */
@@ -119,6 +121,8 @@ body::-webkit-scrollbar-track {
       color: #fff;
       font-size: 2em;
       font-family: $font-babas;
+      display: block;
+      width: auto;
     }
     h3 {
       color: #fff;
@@ -127,6 +131,8 @@ body::-webkit-scrollbar-track {
       font-family: $font-babas;
       letter-spacing: 0.1em;
       font-weight: bold;
+      display: inline-block;
+      width: auto;
     }
   }
 }
@@ -356,7 +362,7 @@ body::-webkit-scrollbar-track {
     left: 0%;
     .project-list {
       min-width: 33.3%;
-      min-height: 750px;
+      aspect-ratio: 1;
       background-color: antiquewhite;
       border-radius: 50px;
     }
@@ -371,7 +377,7 @@ body::-webkit-scrollbar-track {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
+  position: relative;
   h2 {
     width: 95%;
     font-size: 5em;
@@ -388,14 +394,14 @@ body::-webkit-scrollbar-track {
     align-items: center;
 
     .our-list {
-      width: 400px;
-      height: 500px;
+      width: 450px;
+      height: 600px;
 
       p {
         width: 100%;
         height: 30px;
         line-height: 30px;
-        font-size: 1em;
+        font-size: 1.6em;
         color: #fff;
         font-family: $font-poppin;
       }
@@ -404,12 +410,12 @@ body::-webkit-scrollbar-track {
         height: calc(100% - 30px);
         div {
           width: 100%;
-          height: 400px;
+          height: 500px;
           background-color: antiquewhite;
         }
         figcaption {
           width: 100%;
-          font-size: 1.6em;
+          font-size: 2em;
           color: #fff;
           font-family: $font-poppin;
           text-align: center;
@@ -418,7 +424,7 @@ body::-webkit-scrollbar-track {
       }
     }
     .our-list:nth-child(3) {
-      width: 300px;
+      width: 350px;
     }
   }
 }
@@ -430,32 +436,70 @@ body::-webkit-scrollbar-track {
   display: flex;
   justify-content: center;
   align-items: center;
-  h2 {
-    font-size: 7em;
-    color: #fff;
-    font-family: $font-poppin;
+  position: relative;
+  .future-contents {
+    min-width: 1800px;
+    min-height: 700px;
+    position: relative;
+    h2 {
+      display: block;
+      font-size: 15rem;
+      color: #fff;
+      font-family: $font-babas;
+      text-shadow: 0 0 15px white;
+      position: absolute;
+      white-space: nowrap;
+    }
+    .future-contents-middle {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .future-contents-top {
+      top: 7%;
+      left: 18%;
+    }
+    .future-contents-bottom {
+      bottom: 7%;
+      right: 12%;
+    }
   }
+}
+.future::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(
+    180deg,
+    rgba(22, 19, 19, 1) 0%,
+    rgba(22, 19, 19, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 // LADE-APE-COIN
 .lac {
   width: 100%;
-  height: 180vh;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
+  margin-bottom: 300px;
   video {
-    width: 600px;
-    height: 600px;
+    width: 1000px;
+    height: 1000px;
   }
   h3 {
     width: 100%;
-    font-size: 5em;
+    font-size: 8em;
     color: #fff;
     font-family: $font-babas;
     text-align: center;
+    text-shadow: 0 0 10px white;
   }
   .lac-contents {
     width: 95%;
@@ -463,7 +507,7 @@ body::-webkit-scrollbar-track {
       width: 100%;
       margin-bottom: 100px;
       P {
-        font-size: 2em;
+        font-size: 2.5em;
         font-family: $font-poppin;
         text-align: center;
         color: #fff;
@@ -471,7 +515,7 @@ body::-webkit-scrollbar-track {
       }
     }
     p {
-      font-size: 1.5em;
+      font-size: 1.8em;
       font-family: $font-poppin;
       text-align: center;
       color: #fff;
@@ -483,6 +527,31 @@ body::-webkit-scrollbar-track {
     p:nth-child(4) {
       margin-bottom: 100px;
     }
+  }
+}
+
+// CONTACT-US
+.contact {
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  .contact-title {
+    margin: 150px 0;
+    h2 {
+      font-size: 10em;
+      font-family: $font-babas;
+      letter-spacing: 0.5rem;
+      line-height: 0.8;
+    }
+  }
+  .contact-contents {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
   }
 }
 

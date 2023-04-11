@@ -30,6 +30,9 @@ body {
   background-color: rgb(22, 19, 19);
   position: relative;
   cursor: none;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%;
 }
 
 /* === Scroll Bar === */
@@ -115,6 +118,8 @@ body::-webkit-scrollbar-track {
   color: #fff;
   font-size: 2em;
   font-family: BebasNeue-Regular;
+  display: block;
+  width: auto;
 }
 .nft-title div h3 {
   color: #fff;
@@ -123,6 +128,8 @@ body::-webkit-scrollbar-track {
   font-family: BebasNeue-Regular;
   letter-spacing: 0.1em;
   font-weight: bold;
+  display: inline-block;
+  width: auto;
 }
 
 .small-logo {
@@ -339,7 +346,7 @@ body::-webkit-scrollbar-track {
 }
 .project .project-list-wrapper .project-list {
   min-width: 33.3%;
-  min-height: 750px;
+  aspect-ratio: 1;
   background-color: antiquewhite;
   border-radius: 50px;
 }
@@ -351,6 +358,7 @@ body::-webkit-scrollbar-track {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 .our h2 {
   width: 95%;
@@ -368,14 +376,14 @@ body::-webkit-scrollbar-track {
   align-items: center;
 }
 .our .our-list-wrapper .our-list {
-  width: 400px;
-  height: 500px;
+  width: 450px;
+  height: 600px;
 }
 .our .our-list-wrapper .our-list p {
   width: 100%;
   height: 30px;
   line-height: 30px;
-  font-size: 1em;
+  font-size: 1.6em;
   color: #fff;
   font-family: Poppins-Bold;
 }
@@ -385,19 +393,19 @@ body::-webkit-scrollbar-track {
 }
 .our .our-list-wrapper .our-list figure div {
   width: 100%;
-  height: 400px;
+  height: 500px;
   background-color: antiquewhite;
 }
 .our .our-list-wrapper .our-list figure figcaption {
   width: 100%;
-  font-size: 1.6em;
+  font-size: 2em;
   color: #fff;
   font-family: Poppins-Bold;
   text-align: center;
   line-height: 2.5;
 }
 .our .our-list-wrapper .our-list:nth-child(3) {
-  width: 300px;
+  width: 350px;
 }
 
 .future {
@@ -406,32 +414,66 @@ body::-webkit-scrollbar-track {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-.future h2 {
-  font-size: 7em;
+.future .future-contents {
+  min-width: 1800px;
+  min-height: 700px;
+  position: relative;
+}
+.future .future-contents h2 {
+  display: block;
+  font-size: 15rem;
   color: #fff;
-  font-family: Poppins-Bold;
+  font-family: BebasNeue-Regular;
+  text-shadow: 0 0 15px white;
+  position: absolute;
+  white-space: nowrap;
+}
+.future .future-contents .future-contents-middle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.future .future-contents .future-contents-top {
+  top: 7%;
+  left: 18%;
+}
+.future .future-contents .future-contents-bottom {
+  bottom: 7%;
+  right: 12%;
+}
+
+.future::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(180deg, rgb(22, 19, 19) 0%, rgba(22, 19, 19, 0.6) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 .lac {
   width: 100%;
-  height: 180vh;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
+  margin-bottom: 300px;
 }
 .lac video {
-  width: 600px;
-  height: 600px;
+  width: 1000px;
+  height: 1000px;
 }
 .lac h3 {
   width: 100%;
-  font-size: 5em;
+  font-size: 8em;
   color: #fff;
   font-family: BebasNeue-Regular;
   text-align: center;
+  text-shadow: 0 0 10px white;
 }
 .lac .lac-contents {
   width: 95%;
@@ -441,14 +483,14 @@ body::-webkit-scrollbar-track {
   margin-bottom: 100px;
 }
 .lac .lac-contents .lac-contents-top P {
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: Poppins-Bold;
   text-align: center;
   color: #fff;
   margin-bottom: 10px;
 }
 .lac .lac-contents p {
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-family: Poppins-Bold;
   text-align: center;
   color: #fff;
@@ -459,6 +501,30 @@ body::-webkit-scrollbar-track {
 }
 .lac .lac-contents p:nth-child(4) {
   margin-bottom: 100px;
+}
+
+.contact {
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact .contact-title {
+  margin: 150px 0;
+}
+.contact .contact-title h2 {
+  font-size: 10em;
+  font-family: BebasNeue-Regular;
+  letter-spacing: 0.5rem;
+  line-height: 0.8;
+}
+.contact .contact-contents {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
 }
 
 footer {
