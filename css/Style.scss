@@ -383,10 +383,27 @@ body::-webkit-scrollbar-track {
       min-width: 33.3%;
       aspect-ratio: 1;
       border-radius: 50px;
+      position: relative;
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+      p {
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        font-size: 2.5em;
+        font-family: $font-poppin;
+        color: #fff;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      img:hover ~ p {
+        top: 105%;
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
       }
     }
   }
@@ -521,7 +538,6 @@ body::-webkit-scrollbar-track {
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
-  margin-bottom: 300px;
   video {
     width: 1000px;
     height: 1000px;
@@ -559,6 +575,15 @@ body::-webkit-scrollbar-track {
     }
     p:nth-child(4) {
       margin-bottom: 100px;
+    }
+  }
+  .lac-banner {
+    width: 95%;
+    border-bottom: 3px solid white;
+    video {
+      width: 100%;
+      outline: none;
+      border: none;
     }
   }
 }
