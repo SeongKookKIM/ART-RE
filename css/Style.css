@@ -38,6 +38,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
        text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 /* === Scroll Bar === */
@@ -106,13 +107,29 @@ body::-webkit-scrollbar-track {
   width: 45px;
 }
 
+.small-logo {
+  width: 160px;
+  height: 160px;
+  position: fixed;
+  bottom: 2.5%;
+  right: 2.5%;
+  opacity: 1;
+  z-index: 9999;
+}
+.small-logo svg {
+  width: 100%;
+  height: 100%;
+}
+.small-logo svg .b {
+  fill: white;
+}
+
 .nft-title {
   width: 95%;
   height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   gap: 20px;
-  position: relative;
   padding-top: 140px;
   margin: 0 auto;
 }
@@ -137,23 +154,6 @@ body::-webkit-scrollbar-track {
   width: auto;
 }
 
-.small-logo {
-  width: 160px;
-  height: 160px;
-  position: fixed;
-  bottom: 2.5%;
-  right: 2.5%;
-  opacity: 1;
-  z-index: 9999;
-}
-.small-logo svg {
-  width: 100%;
-  height: 100%;
-}
-.small-logo svg .b {
-  fill: white;
-}
-
 .nft {
   width: 100%;
   box-sizing: border-box;
@@ -162,25 +162,29 @@ body::-webkit-scrollbar-track {
   align-items: center;
   gap: 80px;
   overflow: hidden;
+  overflow: hidden;
 }
 .nft .nft-pic {
   width: 95%;
   height: 100vh;
   background-color: bisque;
   backface-visibility: visible;
+  position: absolute;
+  overflow-y: hidden;
 }
 .nft .nft-pic video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transform: scale(300%);
 }
 .nft .nft-contents {
   width: 95%;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 100px;
+  margin: 100px 0;
 }
 .nft .nft-contents P {
   width: 100%;
@@ -319,6 +323,9 @@ body::-webkit-scrollbar-track {
   z-index: 41;
   white-space: nowrap;
   letter-spacing: 0.1em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .marquee .marquee-title {
   position: absolute;
@@ -332,13 +339,14 @@ body::-webkit-scrollbar-track {
   width: 100%;
   height: 100%;
   color: black;
-  font-size: 10em;
+  font-size: 12em;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: BebasNeue-Regular;
   font-weight: bold;
   text-transform: uppercase;
+  text-shadow: 0 0 10px #333;
 }
 
 .project {
@@ -371,7 +379,7 @@ body::-webkit-scrollbar-track {
   left: 0%;
 }
 .project .project-list-wrapper .project-list {
-  min-width: 33.3%;
+  min-width: 33%;
   aspect-ratio: 1;
   border-radius: 50px;
   position: relative;
@@ -726,7 +734,8 @@ footer .footer-wrapper p {
 }
 
 .grow,
-.grow-small {
+.grow-small,
+.grow-blend {
   transform: scale(10);
   background: #fff;
   mix-blend-mode: difference;
@@ -738,9 +747,6 @@ footer .footer-wrapper p {
 }
 
 .grow-blend {
-  transform: scale(20);
-  background: white;
-  mix-blend-mode: soft-light;
-  border: none;
-  outline: none;
+  transform: scale(18);
+  mix-blend-mode: overlay;
 }/*# sourceMappingURL=Style.css.map */

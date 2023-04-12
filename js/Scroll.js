@@ -3,7 +3,7 @@ gsap
     scrollTrigger: {
       trigger: ".nft-title",
       start: "top top",
-      end: "bottom+=1000 top",
+      end: "bottom+=2500 top",
       scrub: 1,
       pin: true,
     },
@@ -13,14 +13,17 @@ gsap
   .from(".third-title", { y: innerHeight * 1, duration: 2.5 })
   .from(".four-title", { y: innerHeight * 1, duration: 2.5 })
   .from(".small-logo", { x: innerWidth * -1, opacity: 0, duration: 2.5 })
-  .from(".five-title ", { y: innerHeight * 1, duration: 2.5 });
+  .from(".five-title ", { y: innerHeight * 1, duration: 2.5 })
+  .to(".nft-pic", { y: innerHeight * -1, duration: 6 })
+  .to(".nft-pic video", { scale: 1, duration: 7 })
+  .to(".nft-title", { opacity: 0, duration: 3 });
 
 gsap
   .timeline({
     scrollTrigger: {
       trigger: ".nft-contents",
-      start: "top-=1000 top",
-      end: "bottom-=100 center",
+      start: "top-=800 top",
+      end: "bottom-=100 center+=100",
       scrub: 1,
     },
   })
@@ -49,7 +52,7 @@ gsap
     scrollTrigger: {
       trigger: ".about-content-first",
       start: "top-=500 top",
-      end: "bottom-=100 center",
+      end: "bottom-=200 center",
       scrub: 1,
     },
   })
@@ -91,7 +94,9 @@ gsap
       scrub: 1,
     },
   })
-  .from(".picture", { opacity: "0", scale: "0" });
+  .to("body", { cursor: "crosshair" })
+  .to(".cursor", { border: "none" })
+  .from(".picture", { opacity: "0", scale: "0", duration: 3 });
 
 gsap
   .timeline({
@@ -102,7 +107,11 @@ gsap
       scrub: 1,
     },
   })
-  .to("body", { backgroundColor: " rgb(22, 19, 19)", duration: 5 })
+  .to("body", {
+    backgroundColor: " rgb(22, 19, 19)",
+    duration: 5,
+    cursor: "none",
+  })
   .to(".header-fixed h2", { color: "black" })
   .to(".header-fixed .hambuger-menu span", { backgroundColor: "black" })
   .to(".small-logo svg .b", { fill: "black" })
