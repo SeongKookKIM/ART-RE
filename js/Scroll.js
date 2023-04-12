@@ -35,7 +35,7 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: ".about",
-      start: "top-=200 top+=100",
+      start: "top-=400 top",
       end: "top+=300 bottom",
       scrub: 1,
     },
@@ -52,7 +52,7 @@ gsap
     scrollTrigger: {
       trigger: ".about-content-first",
       start: "top-=500 top",
-      end: "bottom-=200 center",
+      end: "center center",
       scrub: 1,
     },
   })
@@ -64,7 +64,7 @@ gsap
     scrollTrigger: {
       trigger: ".about-content-second",
       start: "top-=500 top",
-      end: "bottom-=200 center",
+      end: "center center",
       scrub: 1,
     },
   })
@@ -76,7 +76,7 @@ gsap
     scrollTrigger: {
       trigger: ".about-content-third",
       start: "top-=500 top",
-      end: "bottom-=200 center",
+      end: "center center",
       scrub: 1,
     },
   })
@@ -143,11 +143,10 @@ gsap
     },
   })
   .to("body", { backgroundColor: "black", duration: 5 });
-
 gsap
   .timeline({
     scrollTrigger: {
-      trigger: ".contact",
+      trigger: ".partners",
       start: "top-=400 top",
       end: "top+=300 bottom",
       scrub: 1,

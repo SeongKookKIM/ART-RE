@@ -365,7 +365,7 @@ body::-webkit-scrollbar-track {
   color: #fff;
   font-family: BebasNeue-Regular;
   border-bottom: 3px solid white;
-  margin: 100px 0;
+  margin: 100px 0 60px 0;
   padding-bottom: 20px;
 }
 .project .project-list-wrapper {
@@ -379,7 +379,7 @@ body::-webkit-scrollbar-track {
   left: 0%;
 }
 .project .project-list-wrapper .project-list {
-  min-width: 33%;
+  min-width: 32%;
   aspect-ratio: 1;
   border-radius: 50px;
   position: relative;
@@ -581,6 +581,48 @@ body::-webkit-scrollbar-track {
   border: none;
 }
 
+.partners {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.partners .circle {
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  position: relative;
+}
+.partners .circle .item {
+  position: absolute;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners .circle .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.partners .circle h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+  width: 350px;
+  height: 100px;
+}
+.partners .circle h2 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .contact {
   width: 100%;
   display: flex;
@@ -704,9 +746,30 @@ footer ul li a {
 footer ul li:nth-child(4) a {
   letter-spacing: -0.05rem;
 }
+footer ul ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border: none;
+}
+footer ul ul li {
+  width: 50px;
+  height: 50px;
+}
+footer ul ul li a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+footer ul ul li a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 footer .footer-wrapper {
   width: 100%;
-  height: 100px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
