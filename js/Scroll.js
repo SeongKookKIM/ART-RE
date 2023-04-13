@@ -45,7 +45,10 @@ gsap
   .to(".small-logo svg .b", { fill: "black" })
   .to(".cursor", { border: "3px solid black" })
   .to(".grow, .grow-small", { backgroundColor: "black" })
-  .to(".header-fixed .hambuger-menu span", { backgroundColor: "black" });
+  .to(".header-fixed .hambuger-menu span", { backgroundColor: "black" })
+  .to(".menu", { backgroundColor: "white" })
+  .to(".menu-num, .menu-name", { color: "black" })
+  .to(".menu-line", { backgroundColor: "gray" });
 
 gsap
   .timeline({
@@ -131,7 +134,11 @@ gsap
   .to(".header-fixed h2", { color: "white" })
   .to(".header-fixed .hambuger-menu span", { backgroundColor: "white" })
   .to(".small-logo svg .b", { fill: "white" })
-  .to(".project-list-wrapper", { left: "-140%", duration: 5 });
+  .to(".project-list-wrapper", { left: "-140%", duration: 5 })
+  .to(".menu", { backgroundColor: "black" })
+  .to(".menu-num", { color: "rgba(255, 255, 255, 0.3)" })
+  .to(".menu-name", { color: "#fff" })
+  .to(".menu-line", { backgroundColor: "white" });
 
 gsap
   .timeline({
@@ -157,4 +164,7 @@ gsap
   .to(".small-logo svg .b", { fill: "transparent" })
   .to(".cursor", { border: "3px solid black" })
   .to(".grow, .grow-small", { backgroundColor: "black" })
-  .to(".header-fixed .hambuger-menu span", { backgroundColor: "black" });
+  .to(".header-fixed .hambuger-menu span", { backgroundColor: "black" })
+  .to(".menu", { backgroundColor: "white" })
+  .to(".menu-num, .menu-name", { color: "black" })
+  .to(".menu-line", { backgroundColor: "gray" });

@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- ===HEAD=== -->
-    <header class="head"></header>
+    <header class="head" id="home"></header>
     <!-- ===Fixed Header=== -->
     <div class="header-fixed">
       <h2 class="cursor-scale small">TNC ART</h2>
@@ -31,6 +31,31 @@
         <span></span>
       </div>
     </div>
+
+    <!-- ===Menu=== -->
+    <section class="menu">
+      <nav>
+        <ul>
+          <li class="cursor-scale">
+            <span class="menu-num">01</span><span class="menu-line"></span
+            ><a href="#home" class="menu-name">HOME</a>
+          </li>
+          <li class="cursor-scale">
+            <span class="menu-num">02</span><span class="menu-line"></span
+            ><a href="#about" class="menu-name">ABOUT</a>
+          </li>
+          <li class="cursor-scale">
+            <span class="menu-num">03</span><span class="menu-line"></span
+            ><a href="#project" class="menu-name">Featured projects</a>
+          </li>
+          <li class="cursor-scale">
+            <span class="menu-num">04</span><span class="menu-line"></span
+            ><a href="#future" class="menu-name">The Future with TNC Art</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <div class="menu-deco"></div>
 
     <!-- Fixed-LOGO -->
     <div class="small-logo">
@@ -589,7 +614,7 @@
     <!-- ===FOOTER=== -->
     <footer>
       <ul>
-        <li><a href="#" class="cursor-scale small">HOME</a></li>
+        <li><a href="#home" class="cursor-scale small">HOME</a></li>
         <li><a href="#about" class="cursor-scale small">ABOUT</a></li>
         <li>
           <a href="#project" class="cursor-scale small">Featured projects</a>
@@ -707,5 +732,8 @@
     <!-- @@@MATTER.JS -->
     <script src="lib/matter.js"></script>
     <script src="js/Partners.js"></script>
+
+    <!-- @@@MENU.js -->
+    <script src="js/menu.js"></script>
   </body>
 </html>
