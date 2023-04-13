@@ -28,7 +28,7 @@ $(function () {
       $(".hambuger-menu span").css({ position: "relative", height: "3px" });
       $(this).css({ gap: "20px" });
     }
-    $(".menu ul li").click(function () {
+    $(".menu ul li a").click(function () {
       location.reload();
     });
   });
