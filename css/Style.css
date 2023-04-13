@@ -400,6 +400,7 @@ body::-webkit-scrollbar-track {
   color: #fff;
   opacity: 0;
   transition: 0.5s;
+  white-space: nowrap;
 }
 .project .project-list-wrapper .project-list img:hover ~ p {
   top: 105%;
@@ -586,41 +587,69 @@ body::-webkit-scrollbar-track {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.partners .circle {
-  width: 700px;
-  height: 700px;
-  border-radius: 50%;
+  align-items: flex-end;
   position: relative;
+  overflow: visible;
+  border: none;
+  outline: none;
 }
-.partners .circle .item {
+.partners .partners-wrapper {
+  width: 100%;
   position: absolute;
-  width: 300px;
+  top: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.partners .partners-wrapper h2 {
+  font-size: 10em;
+  font-family: BebasNeue-Regular;
+  letter-spacing: 0.5rem;
+  line-height: 0.8;
+}
+.partners .partners-wrapper ul {
+  width: 95%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 150px;
+       column-gap: 150px;
+  margin-top: 50px;
+}
+.partners .partners-wrapper ul li {
+  width: 250px;
+  height: 100px;
+}
+.partners .partners-wrapper ul li a {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.partners .circle .item img {
+.partners .partners-wrapper ul li a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+canvas {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.partners .circle h2 {
+  display: block;
+  background: 0% 0%/contain transparent !important;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 5em;
-  width: 350px;
-  height: 100px;
-}
-.partners .circle h2 img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  border: none !important;
+  outline: none !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .contact {
