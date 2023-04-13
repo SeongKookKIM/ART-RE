@@ -1,7 +1,7 @@
 let counter = 0;
 let w = window.innerWidth;
 let h = window.innerHeight;
-let circNum = 150;
+let circNum = 50;
 console.log(circNum);
 
 var Engine = Matter.Engine,

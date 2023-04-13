@@ -673,41 +673,50 @@ body::-webkit-scrollbar-track {
 .partners .partners-wrapper {
   width: 100%;
   position: absolute;
-  top: 50px;
+  top: 20px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   z-index: 100;
 }
-.partners .partners-wrapper h2 {
-  font-size: 10em;
+.partners .partners-wrapper .patrners-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 130px;
+}
+.partners .partners-wrapper .patrners-title h2 {
+  font-size: 8em;
   font-family: BebasNeue-Regular;
-  letter-spacing: 0.5rem;
-  line-height: 0.8;
 }
-.partners .partners-wrapper ul {
+.partners .partners-wrapper .patrners-title span {
+  font-size: 5em;
+  font-weight: bold;
+}
+.partners .partners-wrapper .partners-contents {
   width: 95%;
+}
+.partners .partners-wrapper .partners-contents ul {
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 150px;
-       column-gap: 150px;
-  margin-top: 50px;
-}
-.partners .partners-wrapper ul li {
-  width: 250px;
-  height: 100px;
-}
-.partners .partners-wrapper ul li a {
+  flex-flow: column nowrap;
+  gap: 20px;
   width: 100%;
-  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.partners .partners-wrapper .partners-contents ul li a {
+  width: 350px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.partners .partners-wrapper ul li a img {
+.partners .partners-wrapper .partners-contents ul li a img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
