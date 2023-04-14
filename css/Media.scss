@@ -248,3 +248,24 @@
     overflow-x: scroll;
   }
 }
+@media screen and (max-width: 769px) {
+  body {
+    cursor: default !important;
+  }
+  // CURSOR
+  .cursor {
+    display: none;
+  }
+
+  .grow,
+  .grow-small,
+  .grow-blend {
+    display: none;
+  }
+  .grow-small {
+    display: none;
+  }
+  .grow-blend {
+    display: none;
+  }
+}
