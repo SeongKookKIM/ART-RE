@@ -1,0 +1,201 @@
+@media screen and (max-width: 1400px) {
+  body {
+    box-sizing: border-box;
+  }
+  .small-logo {
+    width: 100px;
+    height: 100px;
+  }
+  .header-fixed .hambuger-menu span {
+    transform: scale(80%);
+  }
+  .menu nav ul li .menu-num {
+    font-size: 2em;
+  }
+  .menu nav ul li .menu-name {
+    font-size: 2em;
+  }
+  .nft-title {
+    font-size: 0.5rem;
+  }
+  .nft .nft-contents {
+    font-size: 0.5rem;
+  }
+  .about .about-title h2 {
+    font-size: 8em;
+  }
+  .about .about-title span {
+    font-size: 1rem;
+  }
+  .about .about-content-box {
+    height: 500px;
+  }
+  .about .about-content-box .about-content p {
+    font-size: 1.2rem;
+  }
+  .project h2 {
+    font-size: 4em;
+  }
+  .project .project-list-wrapper .project-list {
+    min-width: 450px;
+  }
+  .our {
+    justify-content: flex-start;
+    gap: 50px;
+    height: 120vh;
+    min-height: 1200px;
+  }
+  .our h2 {
+    font-size: 4em;
+  }
+  .our .our-list-wrapper {
+    width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  .our .our-list-wrapper .our-list {
+    width: 300px;
+    height: 100%;
+  }
+  .our .our-list-wrapper .our-list p {
+    font-size: 1em;
+  }
+  .our .our-list-wrapper .our-list figure {
+    width: 100%;
+    height: calc(100% - 30px);
+  }
+  .our .our-list-wrapper .our-list figure div {
+    width: 100%;
+    height: 300px;
+  }
+  .our .our-list-wrapper .our-list figure div video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .our .our-list-wrapper .our-list figure div img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .our .our-list-wrapper .our-list figure figcaption {
+    width: 100%;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    line-height: 2.5;
+  }
+  .our .our-list-wrapper .our-list:nth-child(3) {
+    width: 300px;
+  }
+  .future .future-contents {
+    min-width: 100%;
+    min-height: 450px;
+  }
+  .future .future-contents h2 {
+    font-size: 9rem;
+  }
+  .lac video {
+    width: 650px;
+    height: 650px;
+  }
+  .lac h3 {
+    font-size: 5em;
+  }
+  .lac .lac-contents .lac-contents-top p {
+    font-size: 1.5em;
+  }
+  .lac .lac-contents p {
+    font-size: 1.2em;
+  }
+  .partners {
+    height: 100vh;
+    min-height: 100px;
+  }
+  .partners .partners-wrapper .patrners-title h2 {
+    font-size: 5em;
+  }
+  .partners .partners-wrapper .patrners-title span {
+    font-size: 3em;
+  }
+  .partners .partners-wrapper .partners-contents {
+    width: 50%;
+  }
+  .partners .partners-wrapper .partners-contents ul li a {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .contact-title {
+    margin-bottom: 50px;
+  }
+  .contact .contact-title h2 {
+    font-size: 7em;
+  }
+  .contact .contact-contents-top {
+    height: 400px;
+  }
+  .contact .contact-contents-top .contact-email h3 {
+    font-size: 4em;
+  }
+  .contact .contact-contents-top .contact-email h4 {
+    font-size: 2rem;
+  }
+  .contact .contact-contents-bottom {
+    height: 400px;
+  }
+  .contact .contact-contents-bottom .contact-sns ul {
+    gap: 50px;
+  }
+  .contact .contact-contents-bottom .contact-sns ul li {
+    width: 65px;
+    height: 65px;
+  }
+  .contact .contact-contents-bottom .contact-video-bottom {
+    width: 50%;
+    height: 100%;
+  }
+  .contact .contact-contents-bottom .contact-video-bottom video {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer {
+    height: auto;
+  }
+  footer ul {
+    padding-bottom: 10px;
+  }
+  footer ul li a {
+    font-size: 1rem;
+  }
+  footer ul li ul {
+    gap: 20px;
+  }
+  footer ul li ul li {
+    width: 35px;
+    height: 35px;
+  }
+  footer .footer-wrapper {
+    height: 100px;
+  }
+  footer .footer-wrapper img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  body {
+    box-sizing: border-box;
+    overflow-x: scroll;
+  }
+}/*# sourceMappingURL=Media.css.map */

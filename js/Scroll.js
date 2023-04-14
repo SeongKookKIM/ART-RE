@@ -126,7 +126,7 @@ gsap
     scrollTrigger: {
       trigger: ".project",
       start: "top top",
-      end: "bottom+=500 center",
+      end: "bottom+=1000 center",
       pin: true,
       scrub: 1,
     },
@@ -134,7 +134,7 @@ gsap
   .to(".header-fixed h2", { color: "white" })
   .to(".header-fixed .hambuger-menu span", { backgroundColor: "white" })
   .to(".small-logo svg .b", { fill: "white" })
-  .to(".project-list-wrapper", { left: "-140%", duration: 5 })
+  .to(".project-list-wrapper", { left: "-230%", duration: 10 })
   .to(".menu", { backgroundColor: "black" })
   .to(".menu-num", { color: "rgba(255, 255, 255, 0.3)" })
   .to(".menu-name", { color: "#fff" })

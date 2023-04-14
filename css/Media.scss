@@ -1,0 +1,250 @@
+@media screen and (max-width: 1400px) {
+  body {
+    box-sizing: border-box;
+  }
+  .small-logo {
+    width: 100px;
+    height: 100px;
+  }
+  .header-fixed {
+    .hambuger-menu {
+      span {
+        transform: scale(80%);
+      }
+    }
+  }
+  .menu {
+    nav {
+      ul {
+        li {
+          .menu-num {
+            font-size: 2em;
+          }
+          .menu-name {
+            font-size: 2em;
+          }
+        }
+      }
+    }
+  }
+  .nft-title {
+    font-size: 0.5rem;
+  }
+  .nft {
+    .nft-contents {
+      font-size: 0.5rem;
+    }
+  }
+  .about {
+    .about-title {
+      h2 {
+        font-size: 8em;
+      }
+      span {
+        font-size: 1rem;
+      }
+    }
+    .about-content-box {
+      height: 500px;
+      .about-content {
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .project {
+    h2 {
+      font-size: 4em;
+    }
+    .project-list-wrapper {
+      .project-list {
+        min-width: 450px;
+      }
+    }
+  }
+  .our {
+    justify-content: flex-start;
+    gap: 50px;
+    height: 120vh;
+    min-height: 1200px;
+    h2 {
+      font-size: 4em;
+    }
+    .our-list-wrapper {
+      width: 95%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      .our-list {
+        width: 300px;
+        height: 100%;
+
+        p {
+          font-size: 1em;
+        }
+        figure {
+          width: 100%;
+          height: calc(100% - 30px);
+          div {
+            width: 100%;
+            height: 300px;
+            video {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          figcaption {
+            width: 100%;
+            font-size: 1.5em;
+            color: #fff;
+            text-align: center;
+            line-height: 2.5;
+          }
+        }
+      }
+      .our-list:nth-child(3) {
+        width: 300px;
+      }
+    }
+  }
+  .future {
+    .future-contents {
+      min-width: 100%;
+      min-height: 450px;
+      h2 {
+        font-size: 9rem;
+      }
+    }
+  }
+  .lac {
+    video {
+      width: 650px;
+      height: 650px;
+    }
+    h3 {
+      font-size: 5em;
+    }
+    .lac-contents {
+      .lac-contents-top {
+        p {
+          font-size: 1.5em;
+        }
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
+  }
+  .partners {
+    height: 100vh;
+    min-height: 100px;
+    .partners-wrapper {
+      .patrners-title {
+        h2 {
+          font-size: 5em;
+        }
+        span {
+          font-size: 3em;
+        }
+      }
+      .partners-contents {
+        width: 50%;
+        ul {
+          li {
+            a {
+              width: 200px;
+              height: 60px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    .contact-title {
+      margin-bottom: 50px;
+      h2 {
+        font-size: 7em;
+      }
+    }
+    .contact-contents-top {
+      height: 400px;
+
+      .contact-email {
+        h3 {
+          font-size: 4em;
+        }
+        h4 {
+          font-size: 2rem;
+        }
+      }
+    }
+    .contact-contents-bottom {
+      height: 400px;
+      .contact-sns {
+        ul {
+          gap: 50px;
+          li {
+            width: 65px;
+            height: 65px;
+          }
+        }
+      }
+      .contact-video-bottom {
+        width: 50%;
+        height: 100%;
+        video {
+          width: 100%;
+          height: 100%;
+          outline: none;
+          border: none;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  footer {
+    height: auto;
+
+    ul {
+      padding-bottom: 10px;
+
+      li {
+        a {
+          font-size: 1rem;
+        }
+        ul {
+          gap: 20px;
+          li {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+    }
+    .footer-wrapper {
+      height: 100px;
+      img {
+        width: 100px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  body {
+    box-sizing: border-box;
+    overflow-x: scroll;
+  }
+}

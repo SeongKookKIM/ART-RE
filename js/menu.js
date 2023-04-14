@@ -16,8 +16,8 @@ $(function () {
       $(".menu-deco").animate({ top: "0" }, 1000);
       $(".menu").animate({ top: "0" }, 1300);
     } else {
-      $(".menu").animate({ top: "-100%" }, 1000);
-      $(".menu-deco").animate({ top: "-100%" }, 1300);
+      $(".menu").animate({ top: "-2000px" }, 1000);
+      $(".menu-deco").animate({ top: "-2000px" }, 1300);
       $(".hambuger-menu span:nth-child(1)").css({
         rotate: "0deg",
       });

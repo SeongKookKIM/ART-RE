@@ -31,7 +31,7 @@ a {
 
 body {
   width: 100%;
-  font-size: 100%;
+  min-width: 1024px;
   background-color: rgb(22, 19, 19);
   position: relative;
   cursor: none;
@@ -60,6 +60,7 @@ body::-webkit-scrollbar-track {
 .head {
   width: 100%;
   height: 100vh;
+  min-height: 1000px;
   background: url(../img/tnc-art-logo.png) center center no-repeat;
   background-size: 300px 300px;
 }
@@ -108,8 +109,10 @@ body::-webkit-scrollbar-track {
 .menu {
   width: 100%;
   height: 100vh;
+  min-width: 1200px;
+  min-height: 500px;
   position: fixed;
-  top: -100%;
+  top: -2000px;
   left: 0;
   background-color: black;
   display: flex;
@@ -177,8 +180,9 @@ body::-webkit-scrollbar-track {
 .menu-deco {
   width: 100%;
   height: 100vh;
+  min-height: 500px;
   position: fixed;
-  top: -100%;
+  top: -2000px;
   left: 0;
   background-color: #f4bd03;
   z-index: 7777;
@@ -204,11 +208,13 @@ body::-webkit-scrollbar-track {
 .nft-title {
   width: 95%;
   height: 100vh;
+  min-height: 1080px;
   display: flex;
   flex-flow: column nowrap;
   gap: 20px;
   padding-top: 140px;
   margin: 0 auto;
+  font-size: 0.8vw;
 }
 .nft-title div {
   width: 100%;
@@ -244,6 +250,7 @@ body::-webkit-scrollbar-track {
 .nft .nft-pic {
   width: 95%;
   height: 100vh;
+  min-height: 1080px;
   background-color: bisque;
   backface-visibility: visible;
   position: absolute;
@@ -262,6 +269,7 @@ body::-webkit-scrollbar-track {
   flex-direction: column;
   gap: 10px;
   margin: 100px 0;
+  font-size: 0.8vw;
 }
 .nft .nft-contents P {
   width: 100%;
@@ -343,6 +351,7 @@ body::-webkit-scrollbar-track {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 0.8vw;
 }
 .about .about-content-box .about-content p {
   width: 100%;
@@ -364,6 +373,7 @@ body::-webkit-scrollbar-track {
 .picture {
   width: 100%;
   height: 100vh;
+  min-height: 1080px;
   background: url(../img/picture02.png) center center no-repeat;
   background-size: cover;
   position: relative;
@@ -376,12 +386,14 @@ body::-webkit-scrollbar-track {
   left: 0;
   width: 100%;
   height: 100%;
+  min-height: 1080px;
   background: radial-gradient(circle, rgba(0, 0, 0, 0.3674719888) 0%, rgba(0, 0, 0, 0.8) 100%);
 }
 
 .marquee {
   width: 100%;
-  min-height: 90vh;
+  height: 90vh;
+  min-height: 1080px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -423,12 +435,12 @@ body::-webkit-scrollbar-track {
   font-family: BebasNeue-Regular;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 0 0 10px #333;
 }
 
 .project {
   width: 100%;
   height: 100vh;
+  min-height: 1080px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -488,6 +500,7 @@ body::-webkit-scrollbar-track {
 .our {
   width: 100%;
   height: 100vh;
+  min-height: 1080px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -556,6 +569,7 @@ body::-webkit-scrollbar-track {
 .future {
   width: 100%;
   height: 100vh;
+  min-height: 1080px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -662,6 +676,7 @@ body::-webkit-scrollbar-track {
 .partners {
   width: 100%;
   height: 120vh;
+  min-height: 1280px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -704,7 +719,7 @@ body::-webkit-scrollbar-track {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: white;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   border-radius: 30px;
@@ -846,13 +861,13 @@ footer {
   width: 95%;
   height: 150px;
   margin: 150px auto 0;
+  font-size: 0.8vw;
 }
 footer ul {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 200px;
   border-bottom: 3px solid black;
   padding-bottom: 20px;
 }
@@ -860,6 +875,7 @@ footer ul li a {
   font-size: 1.6em;
   font-family: Poppins-Bold;
   color: black;
+  white-space: nowrap;
 }
 footer ul li:nth-child(4) a {
   letter-spacing: -0.05rem;
@@ -902,6 +918,7 @@ footer .footer-wrapper p {
 
 .cursor {
   position: fixed;
+  top: -100%;
   width: 30px;
   height: 30px;
   margin-left: -20px;
