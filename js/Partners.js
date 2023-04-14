@@ -82,7 +82,7 @@ function createCircle() {
   engine.world.gravity.y = 0.2;
   engine.world.gravity.x = 0;
   for (i = 0; i < circNum; i++) {
-    let randomNumSize = Math.random() * 100;
+    let randomNumSize = Math.random() * 50;
     counter = counter + 1;
     World.add(engine.world, addCircle(randomNumSize));
   }
