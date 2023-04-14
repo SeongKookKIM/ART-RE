@@ -197,6 +197,21 @@
   body {
     box-sizing: border-box;
     overflow-x: scroll;
+    cursor: default !important;
+  }
+  .cursor {
+    display: none;
+  }
+  .grow,
+  .grow-small,
+  .grow-blend {
+    display: none;
+  }
+  .grow-small {
+    display: none;
+  }
+  .grow-blend {
+    display: none;
   }
 }
 @media screen and (max-width: 769px) {
