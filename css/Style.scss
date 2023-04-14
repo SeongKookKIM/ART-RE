@@ -720,7 +720,7 @@ body::-webkit-scrollbar-track {
       }
     }
     .partners-contents {
-      width: 95%;
+      width: 50%;
       ul {
         width: 100%;
         display: flex;
@@ -729,6 +729,7 @@ body::-webkit-scrollbar-track {
         flex-flow: column nowrap;
         background-color: rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5px);
+        border-radius: 30px;
         li {
           margin-bottom: 20px;
           a {
@@ -877,7 +878,7 @@ footer {
     padding-bottom: 20px;
     li {
       a {
-        font-size: 2em;
+        font-size: 1.6em;
         font-family: $font-poppin;
         color: black;
       }
