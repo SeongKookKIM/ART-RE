@@ -481,7 +481,7 @@ body::-webkit-scrollbar-track {
 
   .project-list-wrapper {
     width: 95%;
-    height: 750px;
+    height: calc(100% - 320px);
     display: flex;
     justify-content: flex-start;
     align-items: center;
