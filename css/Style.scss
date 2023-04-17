@@ -519,8 +519,8 @@ body::-webkit-scrollbar-track {
   }
 }
 
-// OURSOURCING
-.our {
+// OUTSOURCING
+.out {
   width: 100%;
   height: 100vh;
   min-height: 1080px;
@@ -537,14 +537,14 @@ body::-webkit-scrollbar-track {
     border-bottom: 3px solid white;
     padding-bottom: 20px;
   }
-  .our-list-wrapper {
+  .out-list-wrapper {
     width: 95%;
     height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    .our-list {
+    .out-list {
       width: 400px;
       height: 600px;
 
@@ -583,7 +583,7 @@ body::-webkit-scrollbar-track {
         }
       }
     }
-    .our-list:nth-child(3) {
+    .out-list:nth-child(3) {
       width: 350px;
     }
   }

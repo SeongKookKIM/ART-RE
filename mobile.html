@@ -4,9 +4,328 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mobile</title>
+    <title>mobile</title>
+    <!-- MAIN-CSS -->
+    <link rel="stylesheet" href="css/mobile.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- @@@AOS.css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- @@@JQEURY-js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
   </head>
   <body>
-    모바일 테스트 입니다.
+    <!-- ===HEADER=== -->
+    <header id="m-header"></header>
+
+    <!-- MENU-Fixed -->
+    <div class="m-fixed-gnb">
+      <h3>TNC-ART</h3>
+      <div class="m-gnb-menu">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- ===Bottom-logo=== -->
+    <div class="m-bottom-logo">
+      <svg
+        id="m-a"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 355.12 355.12"
+      >
+        <path
+          class="m-b"
+          d="M177.56,355.12C79.66,355.12,0,275.45,0,177.56S79.66,0,177.56,0s177.56,79.66,177.56,177.56-79.66,177.56-177.56,177.56Zm0-338.58C88.78,16.54,16.54,88.78,16.54,177.56s72.24,161.02,161.02,161.02,161.02-72.24,161.02-161.02S266.34,16.54,177.56,16.54Z"
+        />
+        <rect class="m-b" x="10.8" y="148.19" width="334.87" height="16.88" />
+        <path
+          class="m-b"
+          d="M96.54,331.83c-.68,0-1.35,0-2.36-.34-3.71-1.01-6.08-4.39-6.08-8.1V32.07c0-4.73,3.71-8.44,8.44-8.44s8.44,3.71,8.44,8.44V292.68L255.2,37.14c2.03-3.38,5.74-4.73,9.45-3.71s6.08,4.39,6.08,8.1V318.68c0,4.73-3.71,8.44-8.44,8.44s-8.44-3.71-8.44-8.44V72.24L103.63,327.78c-1.35,2.7-4.05,4.05-7.09,4.05Z"
+        />
+      </svg>
+    </div>
+
+    <!-- ===NFTS=== -->
+    <main id="m-nfts">
+      <section class="m-nfts-title">
+        <div class="m-first-title">
+          <p>DIGITAL ART THAT</p>
+          <h3>MANIFEST CREATIVITY,</h3>
+        </div>
+        <div class="m-second-title">
+          <p>EXHILARATING NFTS</p>
+          <h3>CRAFTED TO EXCELLENCE,</h3>
+        </div>
+        <div class="m-third-title">
+          <p>MARRYING AESTHETICISM AND BLOCKCHAIN</p>
+          <h3>TO EMPOWER ARTISTS,</h3>
+        </div>
+        <div class="m-four-title">
+          <p>CREATING OUR NICHE</p>
+          <h3>IN THE CACOPHOONY OF NFTS,</h3>
+        </div>
+        <div class="m-five-title">
+          <p>DITCHING THE HUMDRUM TO</p>
+          <h3>YIELD THE HYPER-IMAGINATIVE</h3>
+        </div>
+      </section>
+      <section class="m-nfts-wrapper">
+        <video autoplay muted loop>
+          <source src="img/main-video.mp4" type="video/mp4" />
+        </video>
+        <div class="m-nft-contents">
+          <p>
+            A <span class="m-nfts-f">Non-Fungible</span>
+            <span class="m-nfts-s">Token (NFT)</span> Is A <span>Unique</span>
+            <span class="m-nfts-t">Digital</span>
+            <span class="m-nfts-f">Asset</span>
+            <span class="m-nfts-s">Powered</span> By
+            <span class="m-nfts-f">Blockchain</span>
+            <span class="m-nfts-t">Technology.</span> It
+            <span class="m-nfts-f">Ensures</span> Digital
+            <span class="m-nfts-s">Ownership</span> And
+            <span class="m-nfts-t">Represents</span>
+            <span class="m-nfts-f">Real-World</span>
+            <span class="m-nfts-s">Objects</span> Like
+            <span class="m-nfts-t">Art</span> And
+            <span class="m-nfts-f">Many</span> More.
+            <span class="m-nfts-s">There Are</span> Plenty Of
+            <span class="m-nfts-t">Opportunities</span> For
+            <span class="m-nfts-f">Visual</span> Arts
+            <span class="m-nfts-s">With</span> This
+            <span class="m-nfts-t">Technology,</span> And We’re
+            <span class="m-nfts-f">Banking</span> On Its
+            <span class="m-nfts-s">Potential</span> To
+            <span class="m-nfts-t">Disrupt</span> The
+            <span class="m-nfts-f">Space.</span>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===About=== -->
+    <section id="m-about">
+      <div class="m-about-title">
+        <h2>ABO</h2>
+        <h2><span>TNC</span><span>ART</span>UT</h2>
+      </div>
+
+      <div class="m-about-contents">
+        <div class="m-about-pic">
+          <img src="img/about01.png" alt="01" />
+        </div>
+        <div class="m-about-txt">
+          <p>
+            TNC Art Is The Creative Arm Of The Dubai-Based Blockchain Firm TNC
+            Group. Launched In 2018, TNC Is One Of The Fastest-Growing Companies
+            In The Blockchain Industry, With Over 500 Developers And Experts
+            Providing Blockchain Solutions All Over The World.
+          </p>
+        </div>
+      </div>
+      <div class="m-about-contents">
+        <div class="m-about-pic">
+          <img src="img/about02.png" alt="02" />
+        </div>
+        <div class="m-about-txt">
+          <p>
+            Driven By The Passion And Creative Genius Of Over A Dozen Digital
+            Artists, TNC Art Aims To Carve Out A Unique Space In The
+            Hyper-Imaginative NFT World. And, With The Insanely Successful Lady
+            Apes Collection That Earned A Coveted Spot On Opensea’s Top 10, We
+            Are One Step Closer To This Goal.
+          </p>
+        </div>
+      </div>
+      <div class="m-about-contents">
+        <div class="m-about-pic">
+          <img src="img/about03.png" alt="02" />
+        </div>
+        <div class="m-about-txt">
+          <p>
+            It Is The NFT Space That Motivates Us To Pick Up Our Stylus — That
+            Inspires Us To Render Color To Our Imagination. Powered By The
+            Opportunities Of NFT Technology, Countless Talented Artists From All
+            Over The World Can Now Tell Us Their Stories. And It Is This Space
+            That We Want To Give Back To. Join Us In This Incredible Artistic
+            Journey.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===Picture=== -->
+    <section class="m-pic">
+      <img src="img/picture02.png" alt="picture" id="m-image" />
+    </section>
+
+    <!-- ===M-Marquee=== -->
+    <section class="m-marquee">
+      <h5 class="m-lady-ape-club"></h5>
+      <h5 class="m-aurora-cats"></h5>
+      <h5 class="m-career-shiba-inu"></h5>
+      <h5 class="m-baby-ape"></h5>
+      <h5 class="m-alien-planet"></h5>
+      <h5 class="m-devcat"></h5>
+
+      <div class="m-marquee-title">
+        <h3>
+          Featured
+          <br />
+          projects
+        </h3>
+      </div>
+    </section>
+
+    <!-- ===Project=== -->
+    <section id="m-project">
+      <h2>TNC ART</h2>
+      <div class="m-project-wrapper">
+        <div class="m-project-list">
+          <img src="img/nft/LAC.png" alt="lac" />
+          <h5>LADY APE CLUB</h5>
+        </div>
+        <div class="m-project-list">
+          <img src="img/nft/baby-ape.png" alt="baby-ape" />
+          <h5>BABY APE</h5>
+        </div>
+        <div class="m-project-list">
+          <img src="img/nft/aurora-cats.png" alt="aurora-cats" />
+          <h5>AURORA CAT</h5>
+        </div>
+        <div class="m-project-list">
+          <img src="img/nft/career-shiba-inu.png" alt="career-shiba-inu" />
+          <h5>CAREER SHIBA INU</h5>
+        </div>
+        <div class="m-project-list">
+          <img src="img/nft/alien planet.png" alt="alien-planet" />
+          <h5>ALIEN PLANET</h5>
+        </div>
+        <div class="m-project-list">
+          <img src="img/nft/pixel-friends.png" alt="pixel-friends" />
+          <h5>PIXEL FRIENDZ</h5>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===OUR=== -->
+    <section id="m-out">
+      <h2>OUTSOURCING</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p>2022-2023 Copa Del Rey</p>
+            <video muted autoplay loop>
+              <source src="img/nft/With. 3D Factory.mp4" type="video/mp4" />
+            </video>
+            <h5>With. 3D Factory</h5>
+          </div>
+          <div class="swiper-slide">
+            <p>My Name</p>
+            <img src="img/nft/With. Agent Team.png" alt="02" />
+            <h5>With. Agent Team</h5>
+          </div>
+          <div class="swiper-slide">
+            <p>Talent Bori</p>
+            <img src="img/nft/With. woriteamz.png" alt="03" />
+            <h5>With. woriteamz</h5>
+          </div>
+          <div class="swiper-slide">
+            <p>Ice Dream</p>
+            <img src="img/nft/With. Ice Dream.png" alt="04" />
+            <h5>With. Ice Dream</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===THE FUTURE=== -->
+    <section id="m-future">
+      <h2>THE</h2>
+      <h2>FUTURE WITH</h2>
+      <h2>TNC ART</h2>
+    </section>
+
+    <!-- ===LAC=== -->
+    <section id="m-lac">
+      <div class="m-lac-video">
+        <video autoplay muted loop>
+          <source src="img/coin.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <h3>LADY APE COIN</h3>
+      <div class="m-lac-contents">
+        <div class="m-lac-contents-top">
+          <p>
+            LADY APE COIN(LAC) IS THE TOKEN AT THE HEART OF THE TNC ART PROJECT,
+          </p>
+          <p>
+            CRUCIAL TO THE ASSET VALUE GROWTH OF ALL TNC ART AND NFT OWNERS.
+          </p>
+        </div>
+        <p>
+          TNC ART IS PLEASED TO ANNOUNCE AN EXCLUSIVE AIRDROP EVENT FOR ALL LADY
+          APE CLUB AND BABY APE NFT OWNERS.
+        </p>
+        <p>EACH PURCHASE OF A LADY APE CLUB OR BABY APE NFT WILL BE REWARDED</p>
+        <p>
+          WUTH 3000 LAC UNTIL THE ENTIRE SUPPLY OF 9 BILLION LAC HAS BEEN
+          DISTRIBUTED.
+        </p>
+        <p>JUST KEPP IN MIND,</p>
+        <p>YOU'LL ONLY GET THE REWARD IF YOU HOLD ON TO THE</p>
+        <p>PURCHASED NFT AT LEAST 3 DAYS AFTER THE TRANSACTION.</p>
+      </div>
+    </section>
+
+    <!-- @@@JQUERY-Ripples -->
+    <script>
+      $("#m-header").ripples({
+        resolution: 256,
+        dropRadius: 10,
+        perturbance: 0.04,
+        duration: 500,
+        perturbance: 0.02,
+      });
+    </script>
+
+    <!-- @@@GSAP-js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="js/MobileScroll.js" type="text/javascript"></script>
+
+    <!-- @@@AOS.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- @@@MARQUEE.js -->
+    <script src="js/MobileMarquee.js"></script>
+
+    <!-- @@@Swiper JS@@@ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 70,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <!-- @@@M-PICTURE -->
+    <script src="js/MobilePic.js"></script>
   </body>
 </html>
