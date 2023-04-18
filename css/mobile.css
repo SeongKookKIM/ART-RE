@@ -181,10 +181,11 @@ body {
   font-size: 1rem;
 }
 #m-nfts .m-nfts-wrapper .m-nft-contents p span {
+  display: inline-block;
   font-family: Poppins-Bold;
   color: #fff;
   font-size: 1rem;
-  opacity: 0;
+  opacity: 1;
 }
 
 #m-about {
@@ -445,7 +446,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 50px;
+  gap: 60px;
   padding-bottom: 50px;
   position: absolute;
   top: 0;
@@ -465,7 +466,7 @@ body {
      object-fit: cover;
 }
 #m-bottom-parallax #m-lac h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #fff;
   font-family: Poppins-Bold;
 }
@@ -478,14 +479,18 @@ body {
 }
 #m-bottom-parallax #m-lac .m-lac-contents .m-lac-contents-top p {
   width: 100%;
-  font-size: 1vw;
+  font-size: 0.8rem;
   font-family: Poppins-Bold;
   text-align: center;
+  line-height: 1;
+  margin-bottom: 7px;
 }
 #m-bottom-parallax #m-lac .m-lac-contents p {
-  font-size: 1vw;
+  font-size: 0.8rem;
   color: #fff;
   text-align: center;
+  line-height: 1;
+  margin-bottom: 7px;
 }
 #m-bottom-parallax #m-lac .m-lac-contents p:nth-child(2) {
   margin-bottom: 30px;
@@ -662,7 +667,7 @@ body {
   padding-bottom: 7px;
 }
 #m-footer ul li a {
-  font-size: 1vw;
+  font-size: 0.75rem;
   white-space: nowrap;
   font-family: Poppins-Bold;
   color: black;
@@ -714,7 +719,7 @@ body {
      object-fit: cover;
 }
 #m-footer .m-footer-wrapper p {
-  font-size: 1vw;
+  font-size: 0.6rem;
   font-family: Poppins-Bold;
   position: absolute;
   bottom: 0;
