@@ -31,7 +31,18 @@ $(function () {
       $(this).css({ gap: "20px" });
     }
     $(".menu ul li a").click(function () {
-      location.reload();
+      document.body.style.overflowY = "auto";
+      $(".menu").animate({ top: "-2000px" }, 1000);
+      $(".menu-deco").animate({ top: "-2000px" }, 1300);
+      $(".hambuger-menu span:nth-child(1)").css({
+        rotate: "0deg",
+      });
+      $(".hambuger-menu span:nth-child(2)").css({
+        width: "45px",
+        rotate: "0deg",
+      });
+      $(".hambuger-menu span").css({ position: "relative", height: "3px" });
+      $(".hambuger-menu").css({ gap: "20px" });
     });
   });
 });
