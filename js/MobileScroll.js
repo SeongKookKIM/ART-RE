@@ -20,14 +20,14 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: ".m-nft-contents",
-      start: "top-=100 top",
-      end: "bottom top",
+      start: "top bottom",
+      end: "bottom+=100 bottom",
       scrub: 1,
     },
   })
-  .from(".m-nft-contents p .m-nfts-s", { opacity: 0, duration: 1 })
-  .from(".m-nft-contents p .m-nfts-t", { opacity: 0, duration: 1 })
-  .from(".m-nft-contents p .m-nfts-f", { opacity: 0, duration: 1 });
+  .to(".m-nfts-s", { opacity: 1, duration: 1 })
+  .to(".m-nfts-t", { opacity: 1, duration: 1 })
+  .to(".m-nfts-f", { opacity: 1, duration: 1 });
 
 gsap
   .timeline({
@@ -41,7 +41,17 @@ gsap
   .to("body", { backgroundColor: "white", duration: 5 })
   .to(".m-fixed-gnb h3", { color: "black" })
   .to(".m-gnb-menu span", { backgroundColor: "black" })
-  .to(".m-bottom-logo .m-b", { fill: "black" });
+  .to(".m-bottom-logo .m-b", { fill: "black" })
+  .from(".m-about-title h2:nth-child(1)", {
+    y: innerHeight * -0.1,
+    opacity: 0,
+    duration: 1.2,
+  })
+  .from(".m-about-title h2:nth-child(2)", {
+    y: innerHeight * 0.1,
+    opacity: 0,
+    duration: 1.2,
+  });
 
 gsap
   .timeline({

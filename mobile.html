@@ -84,7 +84,8 @@
         <div class="m-nft-contents">
           <p>
             A <span class="m-nfts-f">Non-Fungible</span>
-            <span class="m-nfts-s">Token (NFT)</span> Is A <span>Unique</span>
+            <span class="m-nfts-s">Token (NFT)</span> Is A
+            <span class="m-nfts-f">Unique</span>
             <span class="m-nfts-t">Digital</span>
             <span class="m-nfts-f">Asset</span>
             <span class="m-nfts-s">Powered</span> By
@@ -120,7 +121,12 @@
 
       <div class="m-about-contents">
         <div class="m-about-pic">
-          <img src="img/about01.png" alt="01" />
+          <img
+            src="img/about01.png"
+            alt="01"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          />
         </div>
         <div class="m-about-txt">
           <p>
@@ -133,7 +139,12 @@
       </div>
       <div class="m-about-contents">
         <div class="m-about-pic">
-          <img src="img/about02.png" alt="02" />
+          <img
+            src="img/about02.png"
+            alt="02"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          />
         </div>
         <div class="m-about-txt">
           <p>
@@ -147,7 +158,12 @@
       </div>
       <div class="m-about-contents">
         <div class="m-about-pic">
-          <img src="img/about03.png" alt="02" />
+          <img
+            src="img/about03.png"
+            alt="02"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          />
         </div>
         <div class="m-about-txt">
           <p>
@@ -189,27 +205,51 @@
     <section id="m-project">
       <h2>TNC ART</h2>
       <div class="m-project-wrapper">
-        <div class="m-project-list">
+        <div
+          class="m-project-list"
+          data-original-bg="img/nft/LAC.png"
+          data-hover-bg="img/nft/LAC.gif"
+        >
           <img src="img/nft/LAC.png" alt="lac" />
           <h5>LADY APE CLUB</h5>
         </div>
-        <div class="m-project-list">
+        <div
+          class="m-project-list"
+          data-original-bg="img/nft/baby-ape.png"
+          data-hover-bg="img/nft/BABY-APE.gif"
+        >
           <img src="img/nft/baby-ape.png" alt="baby-ape" />
           <h5>BABY APE</h5>
         </div>
-        <div class="m-project-list">
+        <div
+          class="m-project-list"
+          data-original-bg="img/nft/aurora-cats.png"
+          data-hover-bg="img/nft/aurora-cats.gif"
+        >
           <img src="img/nft/aurora-cats.png" alt="aurora-cats" />
           <h5>AURORA CAT</h5>
         </div>
-        <div class="m-project-list">
+        <div
+          class="m-project-list"
+          data-original-bg="img/nft/career-shiba-inu.png"
+          data-hover-bg="img/nft/career-shiba-inu.gif"
+        >
           <img src="img/nft/career-shiba-inu.png" alt="career-shiba-inu" />
           <h5>CAREER SHIBA INU</h5>
         </div>
-        <div class="m-project-list">
+        <div
+          class="m-project-list"
+          data-original-bg="img/nft/alien planet.png"
+          data-hover-bg="img/nft/alien-planet.gif"
+        >
           <img src="img/nft/alien planet.png" alt="alien-planet" />
           <h5>ALIEN PLANET</h5>
         </div>
-        <div class="m-project-list">
+        <div
+          class="m-project-list"
+          data-original-bg="img/nft/pixel-friends.png"
+          data-hover-bg="img/nft/pixel-friends.gif"
+        >
           <img src="img/nft/pixel-friends.png" alt="pixel-friends" />
           <h5>PIXEL FRIENDZ</h5>
         </div>
@@ -327,5 +367,29 @@
 
     <!-- @@@M-PICTURE -->
     <script src="js/MobilePic.js"></script>
+    <!-- @@@M-PROJECT -->
+    <script src="js/MobilePure.js"></script>
+
+    <!-- @@@VANTA.JS -->
+    <script src="lib/three.min.js"></script>
+    <script src="lib/vanta.dots.min.js"></script>
+    <script>
+      VANTA.DOTS({
+        el: "#m-future",
+        mouseControls: false,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0xffffff,
+        color2: 0xffffff,
+        backgroundColor: 0x0,
+        size: 10.0,
+        spacing: 76.0,
+        showLines: false,
+      });
+    </script>
   </body>
 </html>

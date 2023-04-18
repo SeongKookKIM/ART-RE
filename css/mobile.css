@@ -137,6 +137,7 @@ body {
   font-family: BebasNeue-Regular;
   letter-spacing: 0rem;
   line-height: 1.6rem;
+  white-space: nowrap;
 }
 #m-nfts .m-nfts-wrapper {
   width: 100%;
@@ -170,7 +171,7 @@ body {
   font-family: Poppins-Bold;
   color: #fff;
   font-size: 1rem;
-  opacity: 1;
+  opacity: 0;
 }
 
 #m-about {
@@ -402,7 +403,7 @@ body {
   line-height: 0.8;
   font-family: BebasNeue-Regular;
   letter-spacing: 0.1rem;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 #m-future h2:nth-child(1) {
   text-align: left;
