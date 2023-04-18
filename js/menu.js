@@ -4,6 +4,7 @@ $(function () {
   $(".hambuger-menu").click(function () {
     on_off = !on_off;
     if (on_off) {
+      document.body.style.overflow = "hidden";
       $(this).css({ gap: "0" });
       $(".hambuger-menu span").css({ position: "absolute", height: "5px" });
       $(".hambuger-menu span:nth-child(2)").css({
@@ -16,6 +17,7 @@ $(function () {
       $(".menu-deco").animate({ top: "0" }, 1000);
       $(".menu").animate({ top: "0" }, 1300);
     } else {
+      document.body.style.overflowY = "auto";
       $(".menu").animate({ top: "-2000px" }, 1000);
       $(".menu-deco").animate({ top: "-2000px" }, 1300);
       $(".hambuger-menu span:nth-child(1)").css({

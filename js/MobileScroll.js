@@ -51,7 +51,11 @@ gsap
     y: innerHeight * 0.1,
     opacity: 0,
     duration: 3.2,
-  });
+  })
+  .to(".mobile-menu", { backgroundColor: "white" })
+  .to(".mo-menu-num", { color: "black" })
+  .to(".mo-menu-line", { backgroundColor: "black" })
+  .to(".mo-menu-name", { color: "black" });
 
 gsap
   .timeline({
@@ -65,7 +69,11 @@ gsap
   .to("body", { backgroundColor: "black", duration: 5 })
   .to(".m-fixed-gnb h3", { color: "white" })
   .to(".m-gnb-menu span", { backgroundColor: "white" })
-  .to(".m-bottom-logo .m-b", { fill: "white" });
+  .to(".m-bottom-logo .m-b", { fill: "white" })
+  .to(".mobile-menu", { backgroundColor: "black" })
+  .to(".mo-menu-num", { color: "white" })
+  .to(".mo-menu-line", { backgroundColor: "white" })
+  .to(".mo-menu-name", { color: "white" });
 
 gsap
   .timeline({
@@ -77,4 +85,8 @@ gsap
   })
   .to(".m-fixed-gnb h3", { color: "black" })
   .to(".m-gnb-menu span", { backgroundColor: "black" })
-  .to(".m-bottom-logo .m-b", { display: "none" });
+  .to(".m-bottom-logo .m-b", { display: "none" })
+  .to(".mobile-menu", { backgroundColor: "white" })
+  .to(".mo-menu-num", { color: "black" })
+  .to(".mo-menu-line", { backgroundColor: "black" })
+  .to(".mo-menu-name", { color: "black" });

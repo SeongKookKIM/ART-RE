@@ -14,6 +14,10 @@ $font-babas: BebasNeue-Regular;
 $font-poppin: Poppins-Bold;
 $font-poppin-light: Poppins-Light;
 $back-color: rgb(22, 19, 19);
+$indigo: #536dc8;
+$danube: #6191d1;
+$white: #fff;
+$bermuda: #77d7b9;
 
 * {
   margin: 0;
@@ -82,12 +86,27 @@ body {
       width: 40px;
       height: 2.5px;
       background-color: white;
+      transition: 1s;
     }
     span:nth-child(2) {
       width: 20px;
     }
   }
+  .m-gnb-menu.open {
+    gap: 0;
+    span {
+      position: absolute;
+    }
+    span:nth-child(2) {
+      width: 40px;
+      transform: rotate(45deg);
+    }
+    span:nth-child(1) {
+      transform: rotate(-45deg);
+    }
+  }
 }
+
 .m-bottom-logo {
   width: 60px;
   height: 60px;
@@ -716,4 +735,63 @@ body {
       transform: translateX(-50%);
     }
   }
+}
+
+// mobile-menu
+.mobile-menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color: black;
+  z-index: 8888;
+  nav {
+    width: 100%;
+    height: 100%;
+
+    ul {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      opacity: 0;
+      .mo-menu-num {
+        font-size: 1.3rem;
+        color: white;
+        font-family: $font-poppin-light;
+        transform: rotate(-90deg);
+        opacity: 0.5;
+      }
+      .mo-menu-line {
+        width: 40px;
+        height: 1px;
+        background-color: white;
+      }
+      .mo-menu-name {
+        font-size: 1.1em;
+        font-family: $font-poppin;
+        color: #fff;
+      }
+    }
+  }
+}
+.mobile-bg {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #f4bd03;
+  z-index: 7777;
 }
