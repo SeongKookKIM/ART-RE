@@ -152,13 +152,12 @@ body {
 }
 #m-nfts .m-nfts-wrapper .m-nft-contents {
   width: 100%;
-  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 0.5rem 0.5rem;
-  margin-bottom: 50px;
+  margin: 20px 0 50px;
 }
 #m-nfts .m-nfts-wrapper .m-nft-contents p {
   width: 100%;
@@ -225,7 +224,9 @@ body {
 
 .m-pic {
   width: 100%;
+  min-height: 30vh;
   margin-top: 100px;
+  overflow: hidden;
 }
 .m-pic img {
   width: 100%;
@@ -394,6 +395,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+#m-future canvas {
+  width: 100% !important;
+  height: 100% !important;
 }
 #m-future h2 {
   width: 75%;
@@ -412,95 +418,217 @@ body {
   text-align: right;
 }
 
-#m-lac {
+#m-bottom-parallax {
+  width: 100%;
+  height: 3000px;
+  position: relative;
+  top: 0;
+  box-sizing: border-box;
+}
+#m-bottom-parallax #m-lac {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background-color: black;
+  box-sizing: border-box;
 }
-#m-lac .m-lac-video {
-  width: 80%;
-  aspect-ratio: 1/1;
+#m-bottom-parallax #m-lac .m-lac-video {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
 }
-#m-lac .m-lac-video video {
+#m-bottom-parallax #m-lac .m-lac-video video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#m-lac h3 {
+#m-bottom-parallax #m-lac h3 {
   font-size: 2rem;
   color: #fff;
   font-family: Poppins-Bold;
 }
-#m-lac .m-lac-contents {
+#m-bottom-parallax #m-lac .m-lac-contents {
   width: 90%;
 }
-#m-lac .m-lac-contents .m-lac-contents-top {
+#m-bottom-parallax #m-lac .m-lac-contents .m-lac-contents-top {
   width: 100%;
   margin-bottom: 30px;
 }
-#m-lac .m-lac-contents .m-lac-contents-top p {
+#m-bottom-parallax #m-lac .m-lac-contents .m-lac-contents-top p {
   width: 100%;
   font-size: 1vw;
   font-family: Poppins-Bold;
   text-align: center;
 }
-#m-lac .m-lac-contents p {
+#m-bottom-parallax #m-lac .m-lac-contents p {
   font-size: 1vw;
   color: #fff;
   text-align: center;
 }
-#m-lac .m-lac-contents p:nth-child(2) {
+#m-bottom-parallax #m-lac .m-lac-contents p:nth-child(2) {
   margin-bottom: 30px;
 }
-#m-lac .m-lac-contents p:nth-child(4) {
+#m-bottom-parallax #m-lac .m-lac-contents p:nth-child(4) {
   margin-bottom: 30px;
 }
-
-#m-partners {
+#m-bottom-parallax .parallax-section {
   width: 100%;
-  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+#m-bottom-parallax .parallax-section #m-partners {
+  width: 100%;
   background-color: white;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   overflow-x: hidden;
 }
-#m-partners .m-partner-title {
+#m-bottom-parallax .parallax-section #m-partners .m-partner-title {
   width: 80%;
   margin: 30px 0;
 }
-#m-partners .m-partner-title img {
+#m-bottom-parallax .parallax-section #m-partners .m-partner-title img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#m-partners .m-partner-wrap {
+#m-bottom-parallax .parallax-section #m-partners .m-partner-wrap {
   width: 90%;
+  margin: 50px 0;
 }
-#m-partners .m-partner-wrap ul {
+#m-bottom-parallax .parallax-section #m-partners .m-partner-wrap ul {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
-#m-partners .m-partner-wrap ul li {
-  width: 100%;
+#m-bottom-parallax .parallax-section #m-partners .m-partner-wrap ul li {
+  width: 200px;
   height: 50px;
 }
-#m-partners .m-partner-wrap ul li a {
+#m-bottom-parallax .parallax-section #m-partners .m-partner-wrap ul li a {
   width: 100%;
   height: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#m-partners .m-partner-wrap ul li a img {
+#m-bottom-parallax .parallax-section #m-partners .m-partner-wrap ul li a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#m-bottom-parallax .parallax-section #m-contact {
+  width: 100%;
+  background-color: white;
+  padding-top: 50px;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-title {
+  width: 70%;
+  margin: 0 auto;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-title h2 {
+  width: 100%;
+  font-size: 4rem;
+  font-family: BebasNeue-Regular;
+  text-align: center;
+  line-height: 0.8;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-title h2:nth-child(2) {
+  text-align: right;
+  padding-right: 10px;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 70px;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-top .m-contact-left {
+  width: 50%;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-top .m-contact-left video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  outline: none;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-top .m-contact-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-top .m-contact-right h3 {
+  font-family: BebasNeue-Regular;
+  font-size: 1.7rem;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-top .m-contact-right p {
+  font-family: Poppins-Light;
+  font-size: 1rem;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-bottom .m-contact-right {
+  width: 50%;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-bottom .m-contact-right video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  outline: none;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-bottom .m-contact-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-bottom .m-contact-left ul {
+  width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-bottom .m-contact-left ul li {
+  width: 15%;
+  aspect-ratio: 1/1;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-bottom .m-contact-left ul li a {
+  width: 100%;
+  height: 100%;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-bottom .m-contact-left ul li a img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }/*# sourceMappingURL=mobile.css.map */

@@ -34,7 +34,7 @@ gsap
     scrollTrigger: {
       trigger: "#m-about",
       start: "top-=300 top",
-      end: "top center",
+      end: "top top+=50",
       scrub: 1,
     },
   })
@@ -45,12 +45,12 @@ gsap
   .from(".m-about-title h2:nth-child(1)", {
     y: innerHeight * -0.1,
     opacity: 0,
-    duration: 1.2,
+    duration: 3.2,
   })
   .from(".m-about-title h2:nth-child(2)", {
     y: innerHeight * 0.1,
     opacity: 0,
-    duration: 1.2,
+    duration: 3.2,
   });
 
 gsap

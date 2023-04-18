@@ -156,13 +156,12 @@ body {
 
     .m-nft-contents {
       width: 100%;
-      height: 40vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 0 0.5rem 0.5rem;
-      margin-bottom: 50px;
+      margin: 20px 0 50px;
       p {
         width: 100%;
         text-align: center;
@@ -232,7 +231,9 @@ body {
 // PICTURE
 .m-pic {
   width: 100%;
+  min-height: 30vh;
   margin-top: 100px;
+  overflow: hidden;
   img {
     width: 100%;
     object-fit: cover;
@@ -402,6 +403,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
   h2 {
     width: 75%;
     font-size: 3rem;
@@ -420,91 +426,215 @@ body {
   }
 }
 
-// m-lac
-#m-lac {
+#m-bottom-parallax {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 50px;
-  margin-bottom: 50px;
-  .m-lac-video {
-    width: 80%;
-    aspect-ratio: 1/1;
-    video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-  h3 {
-    font-size: 2rem;
-    color: #fff;
-    font-family: $font-poppin;
-  }
-  .m-lac-contents {
-    width: 90%;
-    .m-lac-contents-top {
-      width: 100%;
-      margin-bottom: 30px;
-      p {
+  height: 3000px;
+  position: relative;
+  top: 0;
+  box-sizing: border-box;
+  // m-lac
+  #m-lac {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 50px;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    box-sizing: border-box;
+    .m-lac-video {
+      width: 350px;
+      height: 350px;
+      overflow: hidden;
+      video {
         width: 100%;
-        font-size: 1vw;
-        font-family: $font-poppin;
-        text-align: center;
+        height: 100%;
+        object-fit: cover;
       }
     }
-    p {
-      font-size: 1vw;
+    h3 {
+      font-size: 2rem;
       color: #fff;
-      text-align: center;
+      font-family: $font-poppin;
     }
-    p:nth-child(2) {
-      margin-bottom: 30px;
-    }
-    p:nth-child(4) {
-      margin-bottom: 30px;
+    .m-lac-contents {
+      width: 90%;
+      .m-lac-contents-top {
+        width: 100%;
+        margin-bottom: 30px;
+        p {
+          width: 100%;
+          font-size: 1vw;
+          font-family: $font-poppin;
+          text-align: center;
+        }
+      }
+      p {
+        font-size: 1vw;
+        color: #fff;
+        text-align: center;
+      }
+      p:nth-child(2) {
+        margin-bottom: 30px;
+      }
+      p:nth-child(4) {
+        margin-bottom: 30px;
+      }
     }
   }
-}
 
-// PARTNERS
-#m-partners {
-  width: 100%;
-  height: 100vh;
-  background-color: white;
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  overflow-x: hidden;
-  .m-partner-title {
-    width: 80%;
-    margin: 30px 0;
-    img {
+  .parallax-section {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    // PARTNERS
+    #m-partners {
       width: 100%;
-      object-fit: cover;
-    }
-  }
-  .m-partner-wrap {
-    width: 90%;
-    ul {
-      width: 100%;
+      background-color: white;
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
-      li {
-        width: 100%;
-        height: 50px;
-        a {
+      overflow-x: hidden;
+      .m-partner-title {
+        width: 80%;
+        margin: 30px 0;
+        img {
           width: 100%;
-          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .m-partner-wrap {
+        width: 90%;
+        margin: 50px 0;
+        ul {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          li {
+            width: 200px;
+            height: 50px;
+            a {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                width: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #m-contact {
+      width: 100%;
+      background-color: white;
+      padding-top: 50px;
+
+      .m-contact-title {
+        width: 70%;
+        margin: 0 auto;
+        h2 {
+          width: 100%;
+          font-size: 4rem;
+          font-family: $font-babas;
           text-align: center;
-          img {
-            height: 100%;
-            object-fit: cover;
+          line-height: 0.8;
+        }
+        h2:nth-child(2) {
+          text-align: right;
+          padding-right: 10px;
+        }
+      }
+      .m-contact-wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-top: 70px;
+        .m-contact-top {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .m-contact-left {
+            width: 50%;
+
+            video {
+              width: 100%;
+              object-fit: cover;
+              outline: none;
+            }
+          }
+          .m-contact-right {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            h3 {
+              font-family: $font-babas;
+              font-size: 1.7rem;
+            }
+            p {
+              font-family: $font-poppin-light;
+              font-size: 1rem;
+            }
+          }
+        }
+        .m-contact-bottom {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          .m-contact-right {
+            width: 50%;
+
+            video {
+              width: 100%;
+              object-fit: cover;
+              outline: none;
+            }
+          }
+          .m-contact-left {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 15px;
+              li {
+                width: 15%;
+                aspect-ratio: 1/1;
+                a {
+                  width: 100%;
+                  height: 100%;
+                  img {
+                    width: 100%;
+                    object-fit: cover;
+                  }
+                }
+              }
+            }
           }
         }
       }
