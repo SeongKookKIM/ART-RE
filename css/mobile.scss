@@ -412,10 +412,10 @@ body {
     letter-spacing: 0.1rem;
     text-shadow: 0 0 10px rgba(255, 255, 255, 1);
   }
-  h2:nth-child(1) {
+  .m-future-f {
     text-align: left;
   }
-  h2:nth-child(3) {
+  .m-future-t {
     text-align: right;
   }
 }
@@ -428,6 +428,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
+  margin-bottom: 50px;
   .m-lac-video {
     width: 80%;
     aspect-ratio: 1/1;
@@ -464,6 +465,49 @@ body {
     }
     p:nth-child(4) {
       margin-bottom: 30px;
+    }
+  }
+}
+
+// PARTNERS
+#m-partners {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden;
+  .m-partner-title {
+    width: 80%;
+    margin: 30px 0;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .m-partner-wrap {
+    width: 90%;
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      li {
+        width: 100%;
+        height: 50px;
+        a {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
     }
   }
 }
