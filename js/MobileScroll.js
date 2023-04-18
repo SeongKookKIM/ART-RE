@@ -66,3 +66,15 @@ gsap
   .to(".m-fixed-gnb h3", { color: "white" })
   .to(".m-gnb-menu span", { backgroundColor: "white" })
   .to(".m-bottom-logo .m-b", { fill: "white" });
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#m-partners",
+      start: "bottom-=300 top",
+      scrub: 1,
+    },
+  })
+  .to(".m-fixed-gnb h3", { color: "black" })
+  .to(".m-gnb-menu span", { backgroundColor: "black" })
+  .to(".m-bottom-logo .m-b", { display: "none" });
