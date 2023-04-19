@@ -568,6 +568,9 @@ body {
       .m-contact-title {
         width: 70%;
         margin: 0 auto;
+        padding: 0.2rem 0;
+        overflow-y: hidden;
+        box-sizing: border-box;
         h2 {
           width: 100%;
           font-size: 4rem;

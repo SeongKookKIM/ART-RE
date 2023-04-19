@@ -556,6 +556,9 @@ body {
 #m-bottom-parallax .parallax-section #m-contact .m-contact-title {
   width: 70%;
   margin: 0 auto;
+  padding: 0.2rem 0;
+  overflow-y: hidden;
+  box-sizing: border-box;
 }
 #m-bottom-parallax .parallax-section #m-contact .m-contact-title h2 {
   width: 100%;

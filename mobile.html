@@ -37,7 +37,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
   </head>
-  <body>
+  <body
+    oncontextmenu="return false"
+    ondragstart="return false"
+    onselectstart="return false"
+  >
     <!-- ===HEADER=== -->
     <header id="m-header"></header>
 
@@ -433,8 +437,22 @@
         <!-- ===CONTACT US=== -->
         <section id="m-contact">
           <div class="m-contact-title">
-            <h2>CONTACT</h2>
-            <h2>US</h2>
+            <h2
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              data-aos-anchor-placement="top-center"
+            >
+              CONTACT
+            </h2>
+            <h2
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              data-aos-anchor-placement="top-center"
+            >
+              US
+            </h2>
           </div>
           <div class="m-contact-wrap">
             <div class="m-contact-top">
