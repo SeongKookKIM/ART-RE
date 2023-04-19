@@ -146,7 +146,7 @@ body {
   font-family: BebasNeue-Regular;
 }
 #m-nfts .m-nfts-title div h3 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: #fff;
   font-family: BebasNeue-Regular;
   letter-spacing: 0rem;
@@ -789,8 +789,14 @@ body {
 }
 
 @media screen and (max-width: 380px) {
+  #m-nfts .m-nfts-title {
+    border: 1px solid white;
+  }
+  #m-nfts .m-nfts-title div p {
+    font-size: 0.8rem;
+  }
   #m-nfts .m-nfts-title div h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .mobile-menu nav ul li .mo-menu-num {
     font-size: 1.2rem;

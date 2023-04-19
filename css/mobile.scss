@@ -153,7 +153,7 @@ body {
         font-family: $font-babas;
       }
       h3 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         color: #fff;
         font-family: $font-babas;
         letter-spacing: 0rem;
@@ -807,9 +807,13 @@ body {
 @media screen and (max-width: 380px) {
   #m-nfts {
     .m-nfts-title {
+      border: 1px solid white;
       div {
+        p {
+          font-size: 0.8rem;
+        }
         h3 {
-          font-size: 2rem;
+          font-size: 1.6rem;
         }
       }
     }

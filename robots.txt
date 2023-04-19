@@ -1,0 +1,9 @@
+User-agent: *
+
+Allow: /img/
+Allow: index.html
+Disallow: /js/
+Disallow: /lib/
+Disallow: /font/
+Disallow: /css/
+
