@@ -16,19 +16,19 @@ gsap
   .from(".m-five-title ", { y: innerHeight * 1, duration: 2.5 })
   .to(".m-nfts-title", { top: "-100vh", duration: 7 });
 
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: ".m-nft-contents",
-      start: "bottom+=3100 bottom",
-      end: "bottom+=3300 center",
-      scrub: 1,
-      markers: false,
-    },
-  })
-  .to(".m-nfts-s", { opacity: 1, duration: 1 })
-  .to(".m-nfts-t", { opacity: 1, duration: 1 })
-  .to(".m-nfts-f", { opacity: 1, duration: 1 });
+// gsap
+//   .timeline({
+//     scrollTrigger: {
+//       trigger: ".m-nft-contents",
+//       start: "bottom+=3100 bottom",
+//       end: "bottom+=3300 center",
+//       scrub: 1,
+//       markers: false,
+//     },
+//   })
+//   .to(".m-nfts-s", { opacity: 1, duration: 1 })
+//   .to(".m-nfts-t", { opacity: 1, duration: 1 })
+//   .to(".m-nfts-f", { opacity: 1, duration: 1 });
 
 gsap
   .timeline({
