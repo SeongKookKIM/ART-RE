@@ -144,9 +144,11 @@ body {
     top: 0;
     left: 0;
     background-color: black;
+    will-change: transfrom;
     div {
       width: 100%;
       padding-left: 10px;
+      will-change: transfrom;
       p {
         font-size: 1em;
         color: #fff;

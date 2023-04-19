@@ -135,10 +135,12 @@ body {
   top: 0;
   left: 0;
   background-color: black;
+  will-change: transfrom;
 }
 #m-nfts .m-nfts-title div {
   width: 100%;
   padding-left: 10px;
+  will-change: transfrom;
 }
 #m-nfts .m-nfts-title div p {
   font-size: 1em;
