@@ -783,4 +783,19 @@ body {
   height: 100vh;
   background-color: #f4bd03;
   z-index: 7777;
+}
+
+@media screen and (max-width: 380px) {
+  #m-nfts .m-nfts-title div h3 {
+    font-size: 2rem;
+  }
+  .mobile-menu nav ul li .mo-menu-num {
+    font-size: 1.2rem;
+  }
+  .mobile-menu nav ul li .mo-menu-line {
+    width: 35px;
+  }
+  .mobile-menu nav ul li .mo-menu-name {
+    font-size: 1em;
+  }
 }/*# sourceMappingURL=mobile.css.map */
