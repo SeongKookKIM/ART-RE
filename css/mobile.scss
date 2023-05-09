@@ -625,11 +625,21 @@ body {
           align-items: center;
           .m-contact-left {
             width: 50%;
-
+            position: relative;
             video {
               width: 100%;
               object-fit: cover;
               outline: none;
+            }
+            h3 {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 1rem;
+              white-space: nowrap;
+              color: #fff;
+              opacity: 0.5;
             }
           }
           .m-contact-right {
@@ -657,11 +667,21 @@ body {
           box-sizing: border-box;
           .m-contact-right {
             width: 50%;
-
+            position: relative;
             video {
               width: 100%;
               object-fit: cover;
               outline: none;
+            }
+            h3 {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 1rem;
+              white-space: nowrap;
+              color: #fff;
+              opacity: 0.5;
             }
           }
           .m-contact-left {

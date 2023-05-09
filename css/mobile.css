@@ -611,12 +611,23 @@ body {
 }
 #m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-top .m-contact-left {
   width: 50%;
+  position: relative;
 }
 #m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-top .m-contact-left video {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   outline: none;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-top .m-contact-left h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  white-space: nowrap;
+  color: #fff;
+  opacity: 0.5;
 }
 #m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-top .m-contact-right {
   width: 50%;
@@ -643,12 +654,23 @@ body {
 }
 #m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-bottom .m-contact-right {
   width: 50%;
+  position: relative;
 }
 #m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-bottom .m-contact-right video {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   outline: none;
+}
+#m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-bottom .m-contact-right h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  white-space: nowrap;
+  color: #fff;
+  opacity: 0.5;
 }
 #m-bottom-parallax .parallax-section #m-contact .m-contact-wrap .m-contact-bottom .m-contact-left {
   width: 50%;
