@@ -91,15 +91,13 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: ".picture",
-      start: "top top",
-      end: "bottom center",
-      pin: true,
+      start: "top center",
+      end: "center bottom",
       scrub: 1,
     },
   })
   .to("body", { cursor: "crosshair" })
-  .to(".cursor", { border: "none" })
-  .from(".picture", { opacity: "0", scale: "0", duration: 3 });
+  .to(".cursor", { border: "none" });
 
 gsap
   .timeline({

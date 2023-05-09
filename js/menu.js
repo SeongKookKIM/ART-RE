@@ -18,6 +18,7 @@ $(function () {
       $(".menu").animate({ top: "0" }, 1300);
     } else {
       document.body.style.overflowY = "auto";
+      document.body.style.overflowX = "scroll";
       $(".menu").animate({ top: "-2000px" }, 1000);
       $(".menu-deco").animate({ top: "-2000px" }, 1300);
       $(".hambuger-menu span:nth-child(1)").css({
@@ -32,6 +33,7 @@ $(function () {
     }
     $(".menu ul li a").click(function () {
       document.body.style.overflowY = "auto";
+      document.body.style.overflowX = "scroll";
       $(".menu").animate({ top: "-2000px" }, 1000);
       $(".menu-deco").animate({ top: "-2000px" }, 1300);
       $(".hambuger-menu span:nth-child(1)").css({

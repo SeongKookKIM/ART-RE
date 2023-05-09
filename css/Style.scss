@@ -7,11 +7,26 @@
   src: url("../font/Poppins-Bold.ttf");
 }
 @font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../font/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../font/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../font/Poppins-Regular.ttf");
+}
+@font-face {
   font-family: "Poppins-Light";
   src: url("../font/Poppins-Light.ttf");
 }
 $font-babas: BebasNeue-Regular;
 $font-poppin: Poppins-Bold;
+$font-poppin-SemiBold: Poppins-SemiBold;
+$font-poppin-medium: Poppins-Medium;
+$font-poppin-Regular: Poppins-Regular;
 $font-poppin-light: Poppins-Light;
 
 * {
@@ -20,6 +35,7 @@ $font-poppin-light: Poppins-Light;
   box-sizing: border-box;
   font-family: "BebasNeue-Regular";
   font-family: "Poppins-Bold";
+  font-family: "Poppins-Medium";
   font-family: "Poppins-Light";
 }
 ul,
@@ -286,7 +302,7 @@ body::-webkit-scrollbar-track {
       width: 100%;
       color: #fff;
       font-size: 2.5em;
-      font-family: $font-poppin;
+      font-family: $font-poppin-SemiBold;
       text-align: center;
       line-height: 1.5;
       opacity: 1;
@@ -317,7 +333,7 @@ body::-webkit-scrollbar-track {
       text-align: center;
       line-height: 0.8;
       font-weight: 700;
-      font-family: $font-poppin;
+      font-family: $font-poppin-SemiBold;
       display: flex;
       justify-content: center;
       align-items: flex-end;
@@ -326,7 +342,7 @@ body::-webkit-scrollbar-track {
         font-size: 3rem;
         font-weight: 700;
         letter-spacing: -0.2rem;
-        font-family: $font-poppin;
+        font-family: $font-poppin-SemiBold;
       }
       span:nth-child(1) {
         margin-right: 10px;
@@ -395,6 +411,7 @@ body::-webkit-scrollbar-track {
   background: url(../img/picture02.png) center center no-repeat;
   background-size: cover;
   position: relative;
+  margin-top: 150px;
 }
 .picture::after {
   content: "";
@@ -497,6 +514,7 @@ body::-webkit-scrollbar-track {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        cursor: pointer;
       }
       p {
         position: absolute;
@@ -562,6 +580,7 @@ body::-webkit-scrollbar-track {
         div {
           width: 100%;
           height: 500px;
+          cursor: pointer;
           video {
             width: 100%;
             height: 100%;
@@ -678,7 +697,7 @@ body::-webkit-scrollbar-track {
     }
     p {
       font-size: 1.8em;
-      font-family: $font-poppin;
+      font-family: $font-poppin-SemiBold;
       text-align: center;
       color: #fff;
       line-height: 1.5;
@@ -693,7 +712,7 @@ body::-webkit-scrollbar-track {
       margin-bottom: 100px;
     }
     p:nth-child(9) {
-      font-family: $font-poppin-light;
+      font-family: $font-poppin-medium;
       font-size: 1.5rem;
     }
   }
@@ -822,12 +841,26 @@ canvas {
     .contact-video-top {
       width: 50%;
       height: 100%;
+      position: relative;
       video {
         width: 100%;
         height: 100%;
         outline: none;
         border: none;
         object-fit: cover;
+      }
+      h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 4rem;
+        font-size: $font-babas;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        white-space: nowrap;
+        opacity: 0.5;
       }
     }
     .contact-email {
@@ -845,7 +878,7 @@ canvas {
       }
       h4 {
         font-size: 4rem;
-        font-family: $font-poppin-light;
+        font-family: $font-poppin-Regular;
         color: black;
         font-weight: lighter;
       }
@@ -883,12 +916,26 @@ canvas {
     .contact-video-bottom {
       width: 50%;
       height: 100%;
+      position: relative;
       video {
         width: 100%;
         height: 100%;
         outline: none;
         border: none;
         object-fit: cover;
+      }
+      h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 4rem;
+        font-size: $font-babas;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        white-space: nowrap;
+        opacity: 0.5;
       }
     }
   }
@@ -911,7 +958,7 @@ footer {
     li {
       a {
         font-size: 1.6em;
-        font-family: $font-poppin;
+        font-family: $font-poppin-medium;
         color: black;
         white-space: nowrap;
       }
@@ -952,8 +999,8 @@ footer {
     p {
       position: absolute;
       right: 0;
-      font-size: 1.8em;
-      font-family: $font-poppin;
+      font-size: 1.5rem;
+      font-family: $font-poppin-medium;
     }
   }
 }
