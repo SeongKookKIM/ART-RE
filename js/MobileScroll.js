@@ -14,7 +14,8 @@ gsap
   .from(".m-four-title", { y: innerHeight * 1, duration: 2.5 })
   .from(".m-bottom-logo", { x: innerWidth * -1, opacity: 0, duration: 2.5 })
   .from(".m-five-title ", { y: innerHeight * 1, duration: 2.5 })
-  .to(".m-nfts-title", { top: "-100vh", duration: 7 });
+  .to(".m-nfts-title", { top: "-100vh", duration: 7 })
+  .from(".m-nft-contents ", { opacity: "0", duration: 2.5 });
 
 // gsap
 //   .timeline({
