@@ -39,16 +39,16 @@
   .project .project-list-wrapper .project-list {
     min-width: 450px;
   }
-  .our {
+  .out {
     justify-content: flex-start;
     gap: 50px;
     height: 120vh;
     min-height: 1200px;
   }
-  .our h2 {
+  .out h2 {
     font-size: 4em;
   }
-  .our .our-list-wrapper {
+  .out .out-list-wrapper {
     width: 95%;
     display: flex;
     flex-flow: row wrap;
@@ -56,41 +56,41 @@
     align-items: center;
     gap: 100px;
   }
-  .our .our-list-wrapper .our-list {
+  .out .out-list-wrapper .out-list {
     width: 300px;
     height: 100%;
   }
-  .our .our-list-wrapper .our-list p {
+  .out .out-list-wrapper .out-list p {
     font-size: 1em;
   }
-  .our .our-list-wrapper .our-list figure {
+  .out .out-list-wrapper .out-list figure {
     width: 100%;
     height: calc(100% - 30px);
   }
-  .our .our-list-wrapper .our-list figure div {
+  .out .out-list-wrapper .out-list figure div {
     width: 100%;
     height: 300px;
   }
-  .our .our-list-wrapper .our-list figure div video {
+  .out .out-list-wrapper .out-list figure div video {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .our .our-list-wrapper .our-list figure div img {
+  .out .out-list-wrapper .out-list figure div img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .our .our-list-wrapper .our-list figure figcaption {
+  .out .out-list-wrapper .out-list figure figcaption {
     width: 100%;
     font-size: 1.5em;
     color: #fff;
     text-align: center;
     line-height: 2.5;
   }
-  .our .our-list-wrapper .our-list:nth-child(3) {
+  .out .out-list-wrapper .out-list:nth-child(3) {
     width: 300px;
   }
   .future .future-contents {
@@ -112,6 +112,9 @@
   }
   .lac .lac-contents p {
     font-size: 1.2em;
+  }
+  .lac .lac-contents p:last-child {
+    font-size: 1em;
   }
   .partners .partners-wrapper {
     width: 500px;

@@ -491,14 +491,19 @@ body {
   font-size: 0.8rem;
   color: #fff;
   text-align: center;
-  line-height: 1;
+  line-height: 1.1;
   margin-bottom: 7px;
+  text-transform: uppercase;
 }
-#m-bottom-parallax #m-lac .m-lac-contents p:nth-child(2) {
+#m-bottom-parallax #m-lac .m-lac-contents p:nth-child(3) {
   margin-bottom: 30px;
 }
-#m-bottom-parallax #m-lac .m-lac-contents p:nth-child(4) {
+#m-bottom-parallax #m-lac .m-lac-contents p:nth-child(6) {
   margin-bottom: 30px;
+}
+#m-bottom-parallax #m-lac .m-lac-contents p:nth-child(9) {
+  font-family: Poppins-Light;
+  font-size: 0.6rem;
 }
 #m-bottom-parallax .parallax-section {
   width: 100%;
