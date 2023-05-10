@@ -56,7 +56,7 @@ Render.run(render);
 
 let sprites = [
   { texture: "../img/partner/logo_BNB_Chain.svg" },
-  { texture: "../img/partner/meitalk1.svg" },
+  { texture: "../img/partner/Meitalk.svg" },
   { texture: "../img/partner/plastichero.svg" },
   { texture: "../img/partner/Real Research.svg" },
   { texture: "../img/partner/sigma.svg" },
