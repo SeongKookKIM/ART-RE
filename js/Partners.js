@@ -63,6 +63,7 @@ let sprites = [
   { texture: "../img/partner/strmcoin.png" },
   { texture: "../img/partner/angry-monkey-black.png" },
   { texture: "../img/partner/tnc group.svg" },
+  { texture: "../img/partner/fennex-fox.svg" },
 ];
 
 var addCircle = function (randomNumSize) {
