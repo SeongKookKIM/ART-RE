@@ -61,7 +61,7 @@ let sprites = [
   { texture: "../img/partner/Real Research.svg" },
   { texture: "../img/partner/sigma.svg" },
   { texture: "../img/partner/strmcoin.png" },
-  { texture: "../img/partner/strmnft.svg" },
+  { texture: "../img/partner/angry-monkey-black.png" },
   { texture: "../img/partner/tnc group.svg" },
 ];
 
